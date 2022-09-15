@@ -2,21 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>N3Smart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>N3Smart</title>
+
+  <link rel="preload" href="fonts/Inter-Regular.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Medium.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Bold.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
 </head>
 
 <body>
-    <div class="wrapper">
-        @@include('_header.html')
-        <div class="page">
+<div class="wrapper">
+  @@include('_header.html')
+  <div class="root"></div>
+  @@include('_main-page.html')
 
-        </div>
-        @@include('_footer.html')
-    </div>
-    <script src="js/script.min.js"></script>
+  @@include('_footer.html')
+</div>
+<script src="js/script.min.js"></script>
 </body>
 
 </html>
