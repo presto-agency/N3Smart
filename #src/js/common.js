@@ -26,9 +26,11 @@ const addClassHeader = () => {
     })
   }
 
-  window.addEventListener('resize', function () {
-    isActive()
-  })
+  if (window.screen.width < 1200) {
+    window.addEventListener('resize', function () {
+      isActive()
+    })
+  }
 }
 
 const showSubmenu = () => {
