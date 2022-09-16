@@ -8,9 +8,9 @@
 
   <title>N3Smart</title>
 
-  <link rel="preload" href="fonts/Inter-Regular.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/Inter-Medium.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/Inter-Bold.ttf.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -23,70 +23,77 @@
           <img src="img/logo-1.svg" alt="logo">
         </a>
       </div>
-      <ul class="header__content-links">
-        <li class="submenu active">
-          <a href="#">
-            Løsninger
+      <nav class="header__content-navigation content-navigation">
+        <ul class="content-navigation__links">
+          <li class="submenu">
+            <a href="#">
+              Løsninger
+            </a>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-v"></use>
+            </svg>
+            <ul>
+              <li>
+                <a href="#">
+                  Renholdssone
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Inneklima
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Svevestøv
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Aktivitet på maskiner
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Radon
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              Hvorfor velge N3smart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Referanser
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Kontakt oss
+            </a>
+          </li>
+        </ul>
+        <div class="content-navigation__btns">
+          <a class="btn-header" href="#">
+            Portal
           </a>
-          <svg>
-            <use xlink:href="img/icons/icons.svg#arrow-v"></use>
-          </svg>
-          <ul>
-            <li>
-              <a href="#">
-                Renholdssone
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Inneklima
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Svevestøv
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Aktivitet på maskiner
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Radon
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            Hvorfor velge N3smart
+          <a class="btn-header _border" href="#">
+            Priser
           </a>
-        </li>
-        <li>
-          <a href="#">
-            Referanser
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Kontakt oss
-          </a>
-        </li>
-      </ul>
-      <div class="header__content-btns">
-        <a class="btn-header" href="#">
-          Portal
-        </a>
-        <a class="btn-header _border" href="#">
-          Priser
-        </a>
+        </div>
+      </nav>
+      <div class="header__content-cross">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
