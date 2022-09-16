@@ -9,32 +9,38 @@ const addClassHeader = () => {
   if (!!btn) {
     btn.onclick = () => {
       if (header.classList.contains('active')) {
-        header.classList.remove('active')
-        document.querySelectorAll('.submenu>ul').forEach(item => {
-          item.style.maxHeight = '0';
-        })
-        document.querySelectorAll('.submenu').forEach(item => {
-          item.classList.remove('active')
-        })
+        isActive()
       } else {
         header.classList.add('active')
       }
     }
   }
+
+  function isActive() {
+    header.classList.remove('active')
+    document.querySelectorAll('.submenu>ul').forEach(item => {
+      item.style.maxHeight = '0';
+    })
+    document.querySelectorAll('.submenu').forEach(item => {
+      item.classList.remove('active')
+    })
+  }
+
+  window.addEventListener('resize', function () {
+    isActive()
+  })
 }
 
 const showSubmenu = () => {
   if (window.screen.width < 1200) {
-    setTimeout(setHeight, 500)
-    window.addEventListener('resize', () => console.log('hi'))
 
     function setHeight() {
-      let itemsLinks = document.querySelectorAll('.content-navigation__links>.submenu');
+      let itemsLinks = document.querySelectorAll('.submenu');
       if (itemsLinks.length > 0) {
         itemsLinks.forEach(item => {
-          let itemsMenu = item.querySelectorAll('ul>li');
-          let submenuHeight = getHeight(itemsMenu)
           item.onclick = () => {
+            let itemsMenu = item.querySelectorAll('ul>li');
+            let submenuHeight = getHeight(itemsMenu)
             checkHeight(itemsMenu[0], submenuHeight)
             itemsMenu[0].parentNode.parentNode.classList.toggle('active')
           }
@@ -51,6 +57,8 @@ const showSubmenu = () => {
     function checkHeight(item, height) {
       item.parentNode.style.maxHeight = item.parentNode.style.maxHeight === height + 'px' ? '0' : height + 'px';
     }
+
+    setHeight()
   }
 }
 ;
