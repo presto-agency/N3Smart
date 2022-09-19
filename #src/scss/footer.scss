@@ -1,0 +1,222 @@
+.footer {
+  background-color: $color-dark;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 64px 0;
+
+    &_logo {
+      flex: 0 1 134px;
+
+      a {
+        display: block;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &_list {
+      flex: 0 1 504px;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        max-width: 154px;
+        margin: 0 30px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        li {
+          color: $color-white;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 500;
+          margin: 0 0 24px 0;
+          transition: 300ms;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          a {
+            color: $color-white;
+            transition: 300ms;
+
+            &:hover {
+              color: $color-green;
+            }
+          }
+        }
+      }
+    }
+
+    &_callback {
+      flex: 0 1 295px;
+
+      .callback {
+        &__btns {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__form {
+          margin: 63px 0 0 0;
+
+          p {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            color: $color-white;
+          }
+
+          label {
+            position: relative;
+            display: block;
+            margin: 16px 0 0 0;
+
+            input {
+              display: block;
+              width: 100%;
+              height: 40px;
+              padding: 8px 16px;
+              border-radius: 8px;
+              background-color: rgba($color-white, 0.08);
+              border: 1px solid rgba($color-white, 0.08);
+              color: $color-white;
+
+              &::placeholder {
+                color: $color-white;
+                opacity: 0.4;
+              }
+
+              &:focus {
+                border: 1px solid $color-green;
+
+                //error validate classes
+                &:invalid {
+                  border: 1px solid $color-red-error !important;
+                  color: $color-red-error !important;
+                  &+button{
+                    svg{
+                      fill: $color-red-error;
+                    }
+                  }
+
+                  &::placeholder {
+                    color: rgba($color-red-error, 0.3) !important;
+                  }
+                }
+
+                //finish error validate classes
+              }
+            }
+
+            button {
+              position: absolute;
+              right: 8px;
+              padding: 8px;
+              box-sizing: content-box;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 16px;
+              height: 16px;
+              background: transparent;
+
+              svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                width: 16px;
+                height: 16px;
+                fill: $color-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    border-top: 1px solid rgba($color-grey-600, 0.16);
+
+    &_left {
+      display: flex;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 73px 0 0;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+
+      p {
+        margin: 0 126px 0 0;
+      }
+
+      p, li, a {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+        color: $color-white;
+        transition: 300ms;
+
+        &:hover {
+          color: $color-green;
+        }
+      }
+    }
+
+    &_right {
+      display: flex;
+
+      li {
+        margin: 0 32px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &:hover {
+          a {
+            svg {
+              fill: $color-green;
+            }
+          }
+        }
+
+        a {
+          display: block;
+          width: 24px;
+          height: 24px;
+
+          svg {
+            fill: $color-white;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: 300ms;
+          }
+        }
+      }
+    }
+  }
+}
