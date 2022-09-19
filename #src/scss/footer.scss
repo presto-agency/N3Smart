@@ -7,11 +7,12 @@
     padding: 80px 0 64px 0;
 
     &_logo {
-      flex: 0 1 134px;
+      flex: 0 0 134px;
 
       a {
         display: block;
-
+        width: 134px;
+        height: 25px;
         img {
           width: 100%;
           height: 100%;
@@ -23,7 +24,7 @@
     &_list {
       flex: 1 1;
       display: flex;
-      margin: 0 0 0 90px;
+      margin: 0 90px;
       ul {
         display: flex;
         flex-direction: column;
@@ -49,9 +50,10 @@
           a {
             color: $color-white;
             transition: 300ms;
-
-            &:hover {
-              color: $color-green;
+            @media (min-width: 1200px) {
+              &:hover {
+                color: $color-green;
+              }
             }
           }
         }
@@ -65,6 +67,11 @@
         &__btns {
           display: flex;
           justify-content: space-between;
+          .btn{
+            &._nopading{
+              padding: 12px 0;
+            }
+          }
         }
 
         &__form {
@@ -160,15 +167,13 @@
 
         li {
           margin: 0 73px 0 0;
-
+          &:first-child{
+            margin: 0 126px 0 0;
+          }
           &:last-child {
             margin: 0;
           }
         }
-      }
-
-      p {
-        margin: 0 126px 0 0;
       }
 
       p, li, a {
@@ -177,9 +182,10 @@
         font-weight: 500;
         color: $color-white;
         transition: 300ms;
-
-        &:hover {
-          color: $color-green;
+        @media (min-width: 1200px) {
+          &:hover {
+            color: $color-green;
+          }
         }
       }
     }
@@ -193,11 +199,12 @@
         &:last-child {
           margin: 0;
         }
-
-        &:hover {
-          a {
-            svg {
-              fill: $color-green;
+        @media (min-width: 1200px) {
+          &:hover {
+            a {
+              svg {
+                fill: $color-green;
+              }
             }
           }
         }
@@ -213,6 +220,142 @@
             height: 100%;
             object-fit: contain;
             transition: 300ms;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer{
+    &__top{
+      flex-direction: column;
+      justify-content: initial;
+      &_logo{
+        flex: initial;
+        margin: 0 0 56px 0;
+        a{
+          width: 124px;
+          height: 25px;
+        }
+      }
+      &_list{
+        margin: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      &_callback{
+        margin: 56px 0 0 0;
+        flex: initial;
+        .callback{
+          &__form{
+            margin: 44px 0 0 0;
+            max-width: 50%;
+          }
+          &__btns{
+            justify-content: initial;
+            .btn{
+              &._nopading{
+                padding: 12px 43px;
+              }
+              &:first-child{
+                order: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__bottom{
+      display: flex;
+      flex-direction: column;
+      padding: 36px 0 56px 0;
+      &_left{
+        ul{
+          flex: 1 1;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          li{
+            &:first-child{
+              margin: 0 73px 0 0;
+            }
+          }
+        }
+      }
+      &_right{
+        margin: 36px 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer{
+    &__top{
+      &_callback{
+        .callback{
+          &__form{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    &__bottom{
+      &_left{
+        ul{
+          margin: -7px -17px;
+          li{
+            width: calc((100% - (17px *4))/2);
+            margin: 7px 17px;
+            &:nth-child(2n){
+              text-align: right;
+            }
+            &:first-child, &:last-child{
+              margin: 7px 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer{
+    &__top{
+      padding: 56px 0 64px 0;
+      &_list{
+        margin: -22px -24px;
+        flex: initial;
+        justify-content: initial;
+        ul{
+          margin: 22px 24px;
+          max-width: initial;
+          width: calc((100% - (24px * 4))/2);
+          &:first-child, &:last-child{
+            margin: 22px 24px;
+            width: calc((100% - (24px * 4))/2);
+          }
+          li{
+            margin: 0 0 15px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 359px) {
+  .footer{
+    &__bottom{
+      &_left{
+        ul{
+          li{
+            width: 100%;
+            &:nth-child(2n){
+              text-align: initial;
+            }
           }
         }
       }
