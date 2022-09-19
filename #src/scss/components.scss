@@ -1,22 +1,24 @@
 .btn {
-  &-header {
-    font-size: 14px;
-    line-height: 17px;
-    color: $color-green;
-    font-weight: 700;
-    padding: 12px 42px;
-    transition: 300ms;
-
-    &._border {
-      border: 1px solid $color-green;
-      border-radius: 8px;
-      box-shadow: 0px 2px 2px rgba(44, 165, 141, 0.24);
-      @media (min-width: 1200px) {
-        &:hover {
-          background-color: $color-green;
-          color: $color-green-l;
-        }
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  padding: 12px 42px;
+  transition: 300ms;
+  &._border {
+    border: 1px solid $color-green;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(44, 165, 141, 0.24);
+    @media (min-width: 1200px) {
+      &:hover {
+        background-color: $color-green;
+        color: $color-green-l;
       }
     }
+  }
+  &-header {
+    color: $color-green;
+  }
+  &-footer{
+    color: $color-white;
   }
 }

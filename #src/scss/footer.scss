@@ -21,15 +21,14 @@
     }
 
     &_list {
-      flex: 0 1 504px;
+      flex: 1 1;
       display: flex;
-      justify-content: space-between;
-
+      margin: 0 0 0 90px;
       ul {
         display: flex;
         flex-direction: column;
         max-width: 154px;
-        margin: 0 30px 0 0;
+        margin: 0 70px 0 0;
 
         &:last-child {
           margin: 0;

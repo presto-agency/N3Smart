@@ -4,10 +4,9 @@ p {
   color: #0A2342;
 }
 
-.btn-header {
+.btn {
   font-size: 14px;
   line-height: 17px;
-  color: #2CA58D;
   font-weight: 700;
   padding: 12px 42px;
   -webkit-transition: 300ms;
@@ -15,11 +14,19 @@ p {
   transition: 300ms;
 }
 
-.btn-header._border {
+.btn._border {
   border: 1px solid #2CA58D;
   border-radius: 8px;
   -webkit-box-shadow: 0px 2px 2px rgba(44, 165, 141, 0.24);
           box-shadow: 0px 2px 2px rgba(44, 165, 141, 0.24);
+}
+
+.btn-header {
+  color: #2CA58D;
+}
+
+.btn-footer {
+  color: #fff;
 }
 
 @font-face {
@@ -381,15 +388,13 @@ h6 {
 }
 
 .footer__top_list {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 504px;
-          flex: 0 1 504px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 0 0 90px;
 }
 
 .footer__top_list ul {
@@ -401,7 +406,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 154px;
-  margin: 0 30px 0 0;
+  margin: 0 70px 0 0;
 }
 
 .footer__top_list ul:last-child {
@@ -651,7 +656,7 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-  .btn-header._border:hover {
+  .btn._border:hover {
     background-color: #2CA58D;
     color: #EAF4F2;
   }
