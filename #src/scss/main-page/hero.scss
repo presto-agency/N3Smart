@@ -1,0 +1,60 @@
+.hero-block {
+  background-color: $color-grey-300;
+  padding: 142px 0 226px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &_text {
+      flex: 0 1 479px;
+      h2{
+        margin: 10px 0 0 0;
+      }
+      p{
+        font-size: 18px;
+        line-height: 29px;
+        margin: 24px 0 0 0;
+      }
+      .btn-cta{
+        margin: 36px 0 0 0;
+      }
+    }
+
+    &_iframe {
+      position: relative;
+      flex: 0 1 48%;
+
+      .iframe-bg{
+        &__content{
+          position: relative;
+          padding: 56% 0 0 0;
+          iframe {
+            position: absolute;
+            border-radius: 16px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__robot{
+          position: absolute;
+          z-index: 2;
+          bottom: -54px;
+          left: -95px;
+          width: 179px;
+          height: 248px;
+          pointer-events: none;
+        }
+        &__vc{
+          position: absolute;
+          z-index: 2;
+          top: 27px;
+          right: -42px;
+          width: 78px;
+          height: 71px;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
