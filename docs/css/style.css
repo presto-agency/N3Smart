@@ -743,6 +743,63 @@ h4 strong,
   padding: 56% 0 0 0;
 }
 
+.hero-block__content_iframe .iframe-bg__content_substrate {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero-block__content_iframe .iframe-bg__content_substrate:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/hero/play.png");
+  background-repeat: no-repeat;
+  background-size: 56px 56px;
+}
+
+.hero-block__content_iframe .iframe-bg__content_substrate:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 35, 66, 0.3);
+  border-radius: 16px;
+}
+
+.hero-block__content_iframe .iframe-bg__content_substrate.active {
+  opacity: 0;
+}
+
+.hero-block__content_iframe .iframe-bg__content_substrate img {
+  position: absolute;
+  border-radius: 16px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.24);
+}
+
 .hero-block__content_iframe .iframe-bg__content iframe {
   position: absolute;
   border-radius: 16px;
@@ -750,6 +807,7 @@ h4 strong,
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .hero-block__content_iframe .iframe-bg__robot {
@@ -759,7 +817,6 @@ h4 strong,
   left: -95px;
   width: 179px;
   height: 248px;
-  pointer-events: none;
 }
 
 .hero-block__content_iframe .iframe-bg__vc {
@@ -769,7 +826,6 @@ h4 strong,
   right: -42px;
   width: 78px;
   height: 71px;
-  pointer-events: none;
 }
 
 @media (min-width: 1200px) {
@@ -1074,6 +1130,42 @@ h4 strong,
 
   .footer__bottom_right {
     margin: 36px 0 0 0;
+  }
+
+  .hero-block {
+    padding: 50px 0 118px 0;
+  }
+
+  .hero-block__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero-block__content_text {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+
+  .hero-block__content_iframe {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    margin: 60px 0 0 0;
+  }
+
+  .hero-block__content_iframe .iframe-bg__vc {
+    top: -58px;
+    right: 16px;
+  }
+
+  .hero-block__content_iframe .iframe-bg__robot {
+    width: 88px;
+    height: 123px;
+    bottom: -47px;
+    left: 13px;
   }
 }
 

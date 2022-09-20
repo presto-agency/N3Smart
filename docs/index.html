@@ -117,16 +117,18 @@
       </div>
       <div class="hero-block__content_iframe iframe-bg">
         <div class="iframe-bg__content">
-          <iframe src="https://player.vimeo.com/video/538655773?h=adced6f198&color=ffffff&title=0&byline=0&portrait=0"
+          <iframe data-src="https://vimeo.com/538655773"
                   frameborder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowfullscreen>
 
           </iframe>
+          <div class="iframe-bg__content_substrate">
+            <picture><source srcset="img/hero/video-picture.webp" type="image/webp"><img src="img/hero/video-picture.jpg" alt="picture"></picture>
+          </div>
         </div>
         <img class="iframe-bg__robot" src="img/hero/robot.svg" alt="picture">
         <img class="iframe-bg__vc" src="img/hero/vc.svg" alt="picture">
-        <!--        <script src="https://player.vimeo.com/api/player.js"></script>-->
       </div>
     </div>
   </div>
@@ -284,6 +286,7 @@
   </div>
 </footer>
 </div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 
