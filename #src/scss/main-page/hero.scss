@@ -106,7 +106,7 @@
 
 @media (max-width: 1199px) {
   .hero-block{
-    padding: 50px 0 118px 0;
+    padding: 40px 0 127px 0;
     &__content{
       flex-direction: column;
       &_text{
@@ -117,15 +117,29 @@
         margin: 60px 0 0 0;
         .iframe-bg{
           &__vc{
-            top: -58px;
-            right: 16px;
+            top: -53px;
+            right: 1px;
           }
           &__robot{
             width: 88px;
             height: 123px;
-            bottom: -47px;
-            left: 13px;
+            bottom: -61px;
+            left: 0px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .hero-block{
+    &__content{
+      &_text{
+        p{
+          font-size: 14px;
+          line-height: 22px;
+          margin: 20px 0 0 0;
         }
       }
     }
