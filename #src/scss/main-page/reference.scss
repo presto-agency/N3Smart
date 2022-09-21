@@ -1,0 +1,140 @@
+.reference{
+  margin: 90px 0;
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      position: relative;
+      padding: 0 32px 0 0;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      color: $color-dark;
+      transition: 300ms;
+      svg{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        transition: 300ms;
+      }
+      @media (min-width: 1200px) {
+        &:hover{
+          color: $color-green;
+          svg{
+            fill: $color-green;
+          }
+        }
+      }
+    }
+  }
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 54px -26px 103px;
+    .cards{
+      &__item{
+        width: calc(100% / 3);
+        padding: 0 26px;
+        border-right: 1px solid $color-green-l;
+        &:nth-child(3n){
+          border-right: initial;
+        }
+        &_top{
+          display: flex;
+          align-items: center;
+          margin: 0 0 26px 0;
+          span{
+            flex:0 0  40px;
+            height: 40px;
+            margin: 0 24px 0 0;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          p{
+            display: flex;
+            flex-direction: column;
+            strong{
+              &:first-child{
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                color: $color-green;
+              }
+              &:last-child{
+                font-size: 14px;
+                line-height: 22px;
+                color: $color-grey-800;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        &_middle{
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 0 18px 0;
+          border-bottom: 1px solid $color-green-l;
+          margin: -10px;
+          a{
+            position: relative;
+            font-size: 12px;
+            line-height: 19px;
+            color: $color-dark;
+            padding: 0 0 0 20px;
+            margin: 10px;
+            word-break: break-word;
+            &:before{
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 14px;
+              height: 14px;
+              background-image: url("../img/hero/phone.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+            &:last-child{
+              &:before{
+                background-image: url("../img/hero/mail.svg");
+              }
+            }
+          }
+        }
+        &_bottom{
+          p{
+            font-size: 16px;
+            line-height: 26px;
+            font-style: italic;
+            padding: 32px 0;
+            border-bottom: 1px solid $color-green-l;
+          }
+          a{
+            display: block;
+            margin: 26px 0 0 0;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            color: $color-dark;
+            transition: 300ms;
+            @media (min-width: 1200px) {
+              &:hover{
+                color: $color-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
