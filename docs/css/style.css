@@ -1424,9 +1424,33 @@ h4 strong,
   .partners__wrapper ul li {
     width: calc((100% - 96px) / 3);
   }
+
+  .reference__title a {
+    display: none;
+  }
+
+  .reference__cards .cards__item {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  .reference__cards .cards__item:first-child {
+    margin: 0;
+  }
+
+  .reference__cards .cards__item_bottom p {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 767px) {
+  h2,
+  .h2 {
+    font-size: 32px;
+    line-height: 51px;
+  }
+
   h1,
   .h1 {
     font-size: 32px;
