@@ -1,12 +1,12 @@
 .reference {
-  margin: 90px 0;
+  margin: 80px 0 90px 0;
 
   &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &._mob{
+    &._mob {
       display: none;
       justify-content: flex-end;
     }
@@ -164,6 +164,42 @@
       }
     }
   }
+
+  &__numbers {
+    padding: 49px 0 0 0;
+    border-top: 1px solid $color-green-l;
+
+    ul {
+      display: flex;
+      margin: 0 -100px;
+      li {
+        margin: 0 100px;
+        width: calc((100% - (100px * 6)) / 3);
+        border-left: 1px solid $color-green-l;
+
+        &:first-child {
+          border-left: initial;
+        }
+
+        p {
+          display: flex;
+          flex-direction: column;
+          padding: 0 0 0 64px;
+
+          strong {
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: 700;
+            color: $color-green;
+          }
+
+          span {
+
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1023px) {
@@ -172,9 +208,11 @@
       a {
         display: none;
       }
-      &._mob{
+
+      &._mob {
         display: flex;
-        a{
+
+        a {
           display: block;
         }
       }
@@ -182,6 +220,7 @@
 
     &__cards {
       margin: 49px -26px 51px;
+
       .cards {
         &__item {
           width: 100%;
@@ -191,15 +230,16 @@
             margin: 0;
           }
 
-          &_top{
+          &_top {
             margin: 0 0 20px 0;
           }
 
-          &_middle{
+          &_middle {
             flex-direction: column;
             padding: 0 0 30px 0;
-            a{
-              &:first-child{
+
+            a {
+              &:first-child {
                 margin: 0 0 20px 0;
               }
             }
@@ -211,9 +251,44 @@
               line-height: 22px;
               padding: 20px 0;
             }
-            a{
+
+            a {
               margin: 30px 0 0 0;
             }
+          }
+        }
+      }
+    }
+
+    &__numbers {
+      margin: 108px 0 0 0;
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        li {
+          border-left: initial;
+          width: initial;
+          margin: 40px 0 0 0;
+
+          p {
+            padding: 0 0 40px 0;
+            text-align: center;
+          }
+
+          border-bottom: 1px solid $color-green-l;
+
+          &:last-child {
+            border-bottom: initial;
+
+            p {
+              padding: 0;
+            }
+          }
+
+          &:first-child {
+            margin: 0;
           }
         }
       }
