@@ -1,10 +1,17 @@
-.reference{
+.reference {
   margin: 90px 0;
-  &__title{
+
+  &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
+
+    &._mob{
+      display: none;
+      justify-content: flex-end;
+    }
+
+    a {
       position: relative;
       padding: 0 32px 0 0;
       font-size: 16px;
@@ -12,7 +19,8 @@
       font-weight: 500;
       color: $color-dark;
       transition: 300ms;
-      svg{
+
+      svg {
         position: absolute;
         top: 50%;
         right: 0;
@@ -21,53 +29,65 @@
         height: 16px;
         transition: 300ms;
       }
+
       @media (min-width: 1200px) {
-        &:hover{
+        &:hover {
           color: $color-green;
-          svg{
+
+          svg {
             fill: $color-green;
           }
         }
       }
     }
   }
-  &__cards{
+
+  &__cards {
     display: flex;
     flex-wrap: wrap;
     margin: 54px -26px 103px;
-    .cards{
-      &__item{
+
+    .cards {
+      &__item {
         width: calc(100% / 3);
         padding: 0 26px;
         border-right: 1px solid $color-green-l;
-        &:nth-child(3n){
+
+        &:nth-child(3n) {
           border-right: initial;
         }
-        &_top{
+
+        &_top {
           display: flex;
           align-items: center;
           margin: 0 0 26px 0;
-          span{
-            flex:0 0  40px;
+
+          span {
+            flex: 0 0 40px;
             height: 40px;
             margin: 0 24px 0 0;
-            img{
+
+            img {
+              border-radius: 8px;
               width: 100%;
               height: 100%;
               object-fit: cover;
             }
           }
-          p{
+
+          p {
             display: flex;
             flex-direction: column;
-            strong{
-              &:first-child{
+
+            strong {
+              &:first-child {
                 font-size: 16px;
                 line-height: 26px;
                 font-weight: 700;
                 color: $color-green;
               }
-              &:last-child{
+
+              &:last-child {
                 font-size: 14px;
                 line-height: 22px;
                 color: $color-grey-800;
@@ -76,21 +96,22 @@
             }
           }
         }
-        &_middle{
+
+        &_middle {
           display: flex;
           flex-wrap: wrap;
           padding: 0 0 18px 0;
           border-bottom: 1px solid $color-green-l;
-          margin: -10px;
-          a{
+
+          a {
             position: relative;
             font-size: 12px;
             line-height: 19px;
             color: $color-dark;
             padding: 0 0 0 20px;
-            margin: 10px;
             word-break: break-word;
-            &:before{
+
+            &:before {
               content: '';
               position: absolute;
               top: 50%;
@@ -103,22 +124,29 @@
               background-position: center;
               background-size: contain;
             }
-            &:last-child{
-              &:before{
+
+            &:first-child {
+              margin: 0 10px 0 0;
+            }
+
+            &:last-child {
+              &:before {
                 background-image: url("../img/hero/mail.svg");
               }
             }
           }
         }
-        &_bottom{
-          p{
+
+        &_bottom {
+          p {
             font-size: 16px;
             line-height: 26px;
             font-style: italic;
             padding: 32px 0;
             border-bottom: 1px solid $color-green-l;
           }
-          a{
+
+          a {
             display: block;
             margin: 26px 0 0 0;
             font-size: 16px;
@@ -127,7 +155,7 @@
             color: $color-dark;
             transition: 300ms;
             @media (min-width: 1200px) {
-              &:hover{
+              &:hover {
                 color: $color-green;
               }
             }
@@ -139,24 +167,52 @@
 }
 
 @media (max-width: 1023px) {
-  .reference{
-    &__title{
-      a{
+  .reference {
+    &__title {
+      a {
         display: none;
       }
+      &._mob{
+        display: flex;
+        a{
+          display: block;
+        }
+      }
     }
-    &__cards{
-      .cards{
-        &__item{
+
+    &__cards {
+      margin: 49px -26px 51px;
+      .cards {
+        &__item {
           width: 100%;
           margin: 50px 0 0 0;
-          &:first-child{
+
+          &:first-child {
             margin: 0;
           }
-          &_bottom{
-            p{
+
+          &_top{
+            margin: 0 0 20px 0;
+          }
+
+          &_middle{
+            flex-direction: column;
+            padding: 0 0 30px 0;
+            a{
+              &:first-child{
+                margin: 0 0 20px 0;
+              }
+            }
+          }
+
+          &_bottom {
+            p {
               font-size: 14px;
               line-height: 22px;
+              padding: 20px 0;
+            }
+            a{
+              margin: 30px 0 0 0;
             }
           }
         }
