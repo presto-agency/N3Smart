@@ -1896,6 +1896,58 @@ h4 strong,
   .reference__numbers ul li:first-child {
     margin: 0;
   }
+
+  .solutions {
+    padding: 100px 0 222px 0;
+  }
+
+  .solutions__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .solutions__content_title,
+  .solutions__content_list {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+
+  .solutions__content_title {
+    margin: 0 0 50px 0;
+  }
+
+  .solutions__content_list {
+    padding: 0;
+  }
+
+  .solutions__content_list ul li {
+    padding: 0 0 43px 0;
+    margin: 0 0 40px 0;
+  }
+
+  .solutions__content_list ul li p small {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .solutions__content_iso {
+    width: 132px;
+    height: 87px;
+    bottom: -101px;
+    left: 0;
+  }
+
+  .solutions__content_men {
+    width: 132px;
+    height: 226px;
+    bottom: -253px;
+    left: initial;
+    right: 0;
+  }
 }
 
 @media (max-width: 767px) {
