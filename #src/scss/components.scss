@@ -34,6 +34,7 @@
   padding: 20px 72px;
   border-radius: 8px;
   transition: 300ms;
+  white-space: nowrap;
   &._green{
     color: $color-white;
     background-color: $color-green;

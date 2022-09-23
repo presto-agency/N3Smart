@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', function () {
 let playVideo = () => {
   let video_iframe = document.querySelector('.iframe-bg__content>iframe[data-src]');
   if(!!video_iframe){
-    let reg = /\/(?=\d)/g;
+    let reg = /\//g;
     let video_wrapper = document.querySelector('.iframe-bg__content_substrate');
     let video_attribute = video_iframe.getAttribute('data-src').split(reg);
     let video_id = video_attribute[video_attribute.length-1]
