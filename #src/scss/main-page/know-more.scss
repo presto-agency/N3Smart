@@ -40,6 +40,12 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .know-more{
+    background-attachment: initial;
+  }
+}
+
 @media (max-width: 767px) {
   .know-more{
     padding: 56px 0;
