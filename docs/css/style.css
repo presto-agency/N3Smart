@@ -1228,6 +1228,7 @@ h4 strong,
 
 .why-choose__map-city {
   position: absolute;
+  z-index: 2;
   bottom: -60px;
   right: -222px;
   width: 1030px;
