@@ -869,6 +869,7 @@ h4 strong,
 }
 
 .partners__wrapper ul li img {
+  mix-blend-mode: multiply;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
