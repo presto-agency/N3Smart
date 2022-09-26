@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   addClassHeader()
   showSubmenu()
-  changeBg()
 })
 
 const addClassHeader = () => {
@@ -77,6 +76,9 @@ const changeBg = () => {
     })
   }
 }
+
+changeBg()
+
 ;
 window.addEventListener('DOMContentLoaded', function () {
   playVideo()
