@@ -11,8 +11,10 @@ const addClassHeader = () => {
     btn.onclick = () => {
       if (header.classList.contains('active')) {
         isActive()
+        document.querySelector('body').style.overflow = '';
       } else {
         header.classList.add('active')
+        document.querySelector('body').style.overflow = 'hidden';
       }
     }
   }
