@@ -936,13 +936,14 @@ h4 strong,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 54px -26px 103px;
+  margin: 18px -26px 67px;
 }
 
 .reference__cards .cards__item {
   width: 33.3333333333%;
   padding: 0 26px;
   border-right: 1px solid #EAF4F2;
+  margin: 36px 0;
 }
 
 .reference__cards .cards__item:nth-child(3n) {
@@ -1046,13 +1047,18 @@ h4 strong,
   font-size: 16px;
   line-height: 26px;
   font-style: italic;
-  padding: 32px 0;
-  border-bottom: 1px solid #EAF4F2;
+  margin: 32px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  min-height: 182px;
 }
 
 .reference__cards .cards__item_bottom a {
   display: block;
-  margin: 26px 0 0 0;
+  border-top: 1px solid #EAF4F2;
+  padding: 26px 0 0 0;
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
@@ -1100,6 +1106,10 @@ h4 strong,
   line-height: 77px;
   font-weight: 700;
   color: #2CA58D;
+}
+
+.reference__btn {
+  text-align: center;
 }
 
 .why-choose {
@@ -1245,7 +1255,6 @@ h4 strong,
 .know-more {
   position: relative;
   padding: 112px 0;
-  background-image: url("../img/hero/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1852,11 +1861,12 @@ h4 strong,
   .reference__cards .cards__item_bottom p {
     font-size: 14px;
     line-height: 22px;
-    padding: 20px 0;
+    margin: 20px 0;
+    min-height: initial;
   }
 
   .reference__cards .cards__item_bottom a {
-    margin: 30px 0 0 0;
+    padding: 30px 0 0 0;
   }
 
   .reference__numbers {
@@ -1896,6 +1906,14 @@ h4 strong,
 
   .reference__numbers ul li:first-child {
     margin: 0;
+  }
+
+  .reference__btn {
+    text-align: initial;
+  }
+
+  .reference__btn .btn-cta {
+    padding: 19px 66px;
   }
 
   .solutions {
