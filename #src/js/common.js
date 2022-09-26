@@ -1,20 +1,18 @@
 window.addEventListener('DOMContentLoaded', function () {
   addClassHeader()
   showSubmenu()
+  changeBg()
 })
 
 const addClassHeader = () => {
   const btn = document.querySelector('.header__content-cross');
   const header = document.querySelector('.header__content');
-  // let body = document.querySelector('body');
   if (!!btn) {
     btn.onclick = () => {
       if (header.classList.contains('active')) {
         isActive()
-        // body.style.overflow = '';
       } else {
         header.classList.add('active')
-        // body.style.overflow = 'hidden';
       }
     }
   }
@@ -76,6 +74,3 @@ const changeBg = () => {
     })
   }
 }
-
-changeBg()
-
