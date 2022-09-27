@@ -1421,6 +1421,276 @@ h4 strong,
      object-fit: contain;
 }
 
+.hero-inner {
+  margin: 33px 0 126px 0;
+}
+
+.hero-inner__back a {
+  position: relative;
+  font-size: 12px;
+  line-height: 19px;
+  color: #0A2342;
+  padding: 0 0 0 32px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero-inner__back a svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  fill: #0A2342;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero-inner__back a:hover {
+  color: #2CA58D;
+}
+
+.hero-inner__back a:hover svg {
+  fill: #2CA58D;
+}
+
+.hero-inner__top-content {
+  margin: 96px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-inner__top-content .top-content__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 752px;
+          flex: 0 1 752px;
+  margin: 0 50px 0 0;
+}
+
+.hero-inner__top-content .top-content__text h3 {
+  margin: 0 0 64px 0;
+}
+
+.hero-inner__top-content .top-content__text p {
+  line-height: 26px;
+  margin: 0 0 32px 0;
+}
+
+.hero-inner__top-content .top-content__text p:last-child {
+  margin: 0;
+}
+
+.hero-inner__top-content .top-content__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 416px;
+          flex: 0 1 416px;
+}
+
+.hero-inner__top-content .top-content__img_picture {
+  position: relative;
+  width: 100%;
+  height: 490px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-inner__top-content .top-content__img_picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-inner__top-content .top-content__img_picture p {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-inner__top-content .top-content__img_picture p strong {
+  color: #2CA58D;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hero-inner__top-content .top-content__img_picture p span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #878C8B;
+}
+
+.hero-inner__editor {
+  margin: 64px auto 0;
+  max-width: 864px;
+}
+
+.hero-inner__editor h2,
+.hero-inner__editor h3,
+.hero-inner__editor h4 {
+  margin: 64px 0 23px 0;
+}
+
+.hero-inner__editor h2:first-child,
+.hero-inner__editor h3:first-child,
+.hero-inner__editor h4:first-child {
+  margin: 0 0 32px 0;
+}
+
+.hero-inner__editor p {
+  margin: 0 0 32px 0;
+  line-height: 26px;
+}
+
+.hero-inner__editor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 64px auto;
+  border-radius: 16px;
+  max-height: 400px;
+}
+
+.hero-inner__bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 864px;
+  margin: 64px auto;
+  padding: 0 0 127px 0;
+  border-bottom: 1px solid #DEE9E6;
+}
+
+.hero-inner__bottom-content .bottom-content__img img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-inner__bottom-content .bottom-content__img__img {
+  height: 400px;
+}
+
+.hero-inner__bottom-content .bottom-content__img:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+  margin: 0 32px 0 0;
+}
+
+.hero-inner__bottom-content .bottom-content__img:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+}
+
+.hero-inner__inner-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 864px;
+  margin: 0 auto;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn.reverse a span {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn.reverse a span svg {
+  -webkit-transform: rotate(90deg) translateX(-50%) translateY(50%);
+      -ms-transform: rotate(90deg) translateX(-50%) translateY(50%);
+          transform: rotate(90deg) translateX(-50%) translateY(50%);
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn.reverse a p {
+  margin: 5px 32px 0 0;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn.reverse a p strong,
+.hero-inner__inner-buttons .inner-buttons__btn.reverse a p small {
+  text-align: right;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a span {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #EAF4F2;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a span svg {
+  position: absolute;
+  top: calc(50% + 1px);
+  left: 50%;
+  fill: #0A2342;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(-90deg) translateX(50%) translateY(-50%);
+      -ms-transform: rotate(-90deg) translateX(50%) translateY(-50%);
+          transform: rotate(-90deg) translateX(50%) translateY(-50%);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 0 0 32px;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a p strong {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.hero-inner__inner-buttons .inner-buttons__btn a p small {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #878C8B;
+}
+
 @media (min-width: 1200px) {
   .btn._border:hover {
     background-color: #2CA58D;
@@ -1475,6 +1745,14 @@ h4 strong,
 
   .reference__cards .cards__item_bottom a:hover {
     color: #2CA58D;
+  }
+
+  .hero-inner__inner-buttons .inner-buttons__btn a:hover span {
+    background: #2CA58D;
+  }
+
+  .hero-inner__inner-buttons .inner-buttons__btn a:hover span svg {
+    fill: #fff;
   }
 }
 
