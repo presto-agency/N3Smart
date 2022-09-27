@@ -1,10 +1,12 @@
-.product{
+.product {
   margin: 97px 0 0 0;
-  &__title{
+
+  &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
+
+    a {
       position: relative;
       font-size: 16px;
       line-height: 19px;
@@ -13,15 +15,17 @@
       padding: 0 32px 0 0;
       transition: 300ms;
       margin: 0 10px 0 0;
-      &:hover{
+
+      &:hover {
         @media (min-width: 1200px) {
           color: $color-green;
-          svg{
+          svg {
             fill: $color-green
           }
         }
       }
-      svg{
+
+      svg {
         position: absolute;
         right: 0;
         top: 50%;
@@ -33,19 +37,22 @@
       }
     }
   }
-  &__cards{
-    ul{
+
+  &__cards {
+    ul {
       margin: 68px -11px 115px;
       display: flex;
       flex-wrap: wrap;
-      li{
+
+      li {
         position: relative;
         border-radius: 8px;
         overflow: hidden;
         margin: 20px 11px;
-        width: calc((100% - (11px * 4))/2);
+        width: calc((100% - (11px * 4)) / 2);
         height: 464px;
-        &:before{
+
+        &:before {
           content: '';
           position: absolute;
           border-radius: 8px;
@@ -55,7 +62,8 @@
           pointer-events: none;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.16) 47.63%);
         }
-        &:after{
+
+        &:after {
           content: '';
           position: absolute;
           border-radius: 8px;
@@ -64,22 +72,24 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: #0A2342;
+          background: $color-dark;
         }
-        img{
+
+        img {
           position: absolute;
           border-radius: 8px;
-          z-index: 2;
-          opacity: 0.3;
+          z-index: 3;
+          opacity: 0.2;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
-        p{
+
+        p {
           position: absolute;
-          z-index: 3;
+          z-index: 4;
           bottom: 0px;
           left: 0px;
           padding: 40px;
@@ -87,19 +97,22 @@
           flex-direction: column;
           max-width: 472px;
           box-sizing: content-box;
-          strong{
+
+          strong {
             font-size: 24px;
             line-height: 38px;
             font-weight: 700;
             color: $color-white;
           }
-          small{
+
+          small {
             font-size: 16px;
             line-height: 26px;
             color: $color-white;
             margin: 10px 0 0 0;
           }
-          a{
+
+          a {
             position: relative;
             align-self: flex-start;
             font-size: 14px;
@@ -108,14 +121,16 @@
             color: $color-white;
             margin: 34px 0 7px 0;
             padding: 0 32px 0 0;
-            &:hover{
+
+            &:hover {
               @media (min-width: 1200px) {
-                svg{
+                svg {
                   transform: translateY(-50%) translateX(5px);
                 }
               }
             }
-            svg{
+
+            svg {
               position: absolute;
               right: 0;
               top: 50%;
@@ -132,12 +147,13 @@
   }
 }
 
-.pail{
+.pail {
   position: relative;
   height: 1px;
   width: 100%;
   margin: 144px 0 150px;
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     left: 0;
@@ -146,7 +162,8 @@
     height: 1px;
     background: $color-grey-800;
   }
-  &:after{
+
+  &:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -161,30 +178,37 @@
 }
 
 @media (max-width: 1023px) {
-  .product{
+  .product {
     margin: 36px 0 0 0;
-    &__title{
-      a{
+
+    &__title {
+      a {
         display: none;
       }
     }
-    &__cards{
-      ul{
+
+    &__cards {
+      ul {
         margin: 35px -11px 29px;
-        li{
+
+        li {
           width: 100%;
           height: 348px;
-          p{
+
+          p {
             padding: 15px 24px;
-            small{
+
+            small {
               font-size: 14px;
               line-height: 22px;
             }
-            strong{
+
+            strong {
               font-size: 16px;
               line-height: 26px;
             }
-            a{
+
+            a {
               margin: 17px 0 7px 0;
             }
           }
@@ -192,8 +216,8 @@
       }
     }
   }
-  .pail{
-    &:after{
+  .pail {
+    &:after {
       left: 97px;
     }
   }

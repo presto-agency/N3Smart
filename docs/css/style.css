@@ -1789,8 +1789,8 @@ h4 strong,
 .product__cards ul li img {
   position: absolute;
   border-radius: 8px;
-  z-index: 2;
-  opacity: 0.3;
+  z-index: 3;
+  opacity: 0.2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1801,7 +1801,7 @@ h4 strong,
 
 .product__cards ul li p {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   bottom: 0px;
   left: 0px;
   padding: 40px;
