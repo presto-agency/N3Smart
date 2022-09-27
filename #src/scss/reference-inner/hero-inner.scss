@@ -41,7 +41,7 @@
         flex: 0 1 752px;
         margin: 0 50px 0 0;
 
-        span{
+        span {
           display: none;
           font-size: 14px;
           line-height: 22px;
@@ -124,7 +124,6 @@
 
     img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
       margin: 64px auto;
       border-radius: 16px;
@@ -209,7 +208,7 @@
 
           span {
             position: relative;
-            width:48px;
+            width: 48px;
             height: 48px;
             border-radius: 8px;
             background: $color-green-l;
@@ -253,27 +252,33 @@
 }
 
 @media (max-width: 1023px) {
-  .hero-inner{
+  .hero-inner {
     margin: 24px 0 56px 0;
-    &__top-content{
+
+    &__top-content {
       flex-direction: column;
       margin: 36px 0 0 0;
-      .top-content{
-        &__text{
+
+      .top-content {
+        &__text {
           flex: initial;
           margin: 0;
-          h3{
+
+          h3 {
             margin: 0 0 42px 0;
           }
-          p{
+
+          p {
             font-size: 14px;
             line-height: 22px;
           }
-          span{
+
+          span {
             display: block;
           }
         }
-        &__img{
+
+        &__img {
           flex: initial;
           max-width: 400px;
           margin: 55px auto 0;
@@ -284,57 +289,67 @@
 }
 
 @media (max-width: 767px) {
-  .hero-inner{
-    &__top-content{
-      .top-content{
-        &__img{
-          &_picture{
+  .hero-inner {
+    &__top-content {
+      .top-content {
+        &__img {
+          &_picture {
             height: 348px;
           }
         }
       }
     }
-    &__editor{
-      p{
+
+    &__editor {
+      p {
         font-size: 14px;
         line-height: 22px;
       }
-      img{
+
+      img {
         height: 220px;
         margin: 46px auto 56px;
       }
     }
-    &__bottom-content{
+
+    &__bottom-content {
       flex-direction: column;
       padding: 0 0 51px 0;
       margin: 0 0 38px 0;
-      .bottom-content{
-        &__img{
-          &:first-child{
+
+      .bottom-content {
+        &__img {
+          &:first-child {
             flex: initial;
             margin: 0 0 40px 0;
             height: 220px;
           }
-          &:last-child{
+
+          &:last-child {
             flex: initial;
             height: 348px;
           }
         }
       }
     }
-    &__inner-buttons{
+
+    &__inner-buttons {
       flex-direction: column;
-      .inner-buttons{
-        &__btn{
-          &:first-child{
+
+      .inner-buttons {
+        &__btn {
+          &:first-child {
             margin: 0 0 36px 0;
           }
-          a{
+
+          a {
             justify-content: center;
-            span{
+
+            span {
               flex: 0 0 auto;
             }
-            p{
+
+            p {
               width: 100%;
             }
           }

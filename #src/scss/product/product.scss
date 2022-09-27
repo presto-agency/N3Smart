@@ -1,0 +1,200 @@
+.product{
+  margin: 97px 0 0 0;
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      position: relative;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-dark;
+      font-weight: 500;
+      padding: 0 32px 0 0;
+      transition: 300ms;
+      margin: 0 10px 0 0;
+      &:hover{
+        @media (min-width: 1200px) {
+          color: $color-green;
+          svg{
+            fill: $color-green
+          }
+        }
+      }
+      svg{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        fill: $color-dark;
+        transition: 300ms;
+      }
+    }
+  }
+  &__cards{
+    ul{
+      margin: 68px -11px 115px;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 20px 11px;
+        width: calc((100% - (11px * 4))/2);
+        height: 464px;
+        &:before{
+          content: '';
+          position: absolute;
+          border-radius: 8px;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.16) 47.63%);
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          border-radius: 8px;
+          pointer-events: none;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #0A2342;
+        }
+        img{
+          position: absolute;
+          border-radius: 8px;
+          z-index: 2;
+          opacity: 0.3;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        p{
+          position: absolute;
+          z-index: 3;
+          bottom: 0px;
+          left: 0px;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          max-width: 472px;
+          box-sizing: content-box;
+          strong{
+            font-size: 24px;
+            line-height: 38px;
+            font-weight: 700;
+            color: $color-white;
+          }
+          small{
+            font-size: 16px;
+            line-height: 26px;
+            color: $color-white;
+            margin: 10px 0 0 0;
+          }
+          a{
+            position: relative;
+            align-self: flex-start;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+            color: $color-white;
+            margin: 34px 0 7px 0;
+            padding: 0 32px 0 0;
+            &:hover{
+              @media (min-width: 1200px) {
+                svg{
+                  transform: translateY(-50%) translateX(5px);
+                }
+              }
+            }
+            svg{
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 16px;
+              height: 9px;
+              fill: $color-white;
+              transition: 300ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pail{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 144px 0 150px;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: $color-grey-800;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 317px;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/product/pail.svg");
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .product{
+    margin: 36px 0 0 0;
+    &__title{
+      a{
+        display: none;
+      }
+    }
+    &__cards{
+      ul{
+        margin: 35px -11px 29px;
+        li{
+          width: 100%;
+          height: 348px;
+          p{
+            padding: 15px 24px;
+            small{
+              font-size: 14px;
+              line-height: 22px;
+            }
+            strong{
+              font-size: 16px;
+              line-height: 26px;
+            }
+            a{
+              margin: 17px 0 7px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pail{
+    &:after{
+      left: 97px;
+    }
+  }
+}
