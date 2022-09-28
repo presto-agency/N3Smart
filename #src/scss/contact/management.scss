@@ -14,7 +14,12 @@
       height: 17px;
       box-sizing: content-box;
       padding: 0 0 13px 0;
-
+      overflow-x: auto;
+      max-width: 100%;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
       li {
         font-size: 14px;
         line-height: 17px;
@@ -132,6 +137,42 @@
                 background-image: url("../img/hero/mail.svg");
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .management{
+    &__title{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 41px 0;
+      ul{
+        margin: 30px 0 0 0;
+      }
+    }
+    &__persons-list{
+      .persons-list{
+        &__link{
+          width: calc((100% - (16px * 4))/2);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .management{
+    padding: 50px 0 100px 0;
+    &__persons-list{
+      .persons-list{
+        &__link{
+          width: calc((100% - (16px * 2)));
+          &_person{
+            padding: 35px 0;
           }
         }
       }

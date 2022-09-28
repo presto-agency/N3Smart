@@ -2078,6 +2078,13 @@ h4 strong,
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0 0 13px 0;
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+
+.management__title ul::-webkit-scrollbar {
+  display: none;
 }
 
 .management__title ul li {
@@ -2610,6 +2617,25 @@ h4 strong,
 
   .hero-contacts__content_img {
     padding: 0;
+  }
+
+  .management__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 41px 0;
+  }
+
+  .management__title ul {
+    margin: 30px 0 0 0;
+  }
+
+  .management__persons-list .persons-list__link {
+    width: calc((100% - 64px) / 2);
   }
 }
 
@@ -3215,6 +3241,18 @@ h4 strong,
 
   .partners__wrapper ul li {
     width: 100%;
+  }
+
+  .management {
+    padding: 50px 0 100px 0;
+  }
+
+  .management__persons-list .persons-list__link {
+    width: calc(100% - 32px);
+  }
+
+  .management__persons-list .persons-list__link_person {
+    padding: 35px 0;
   }
 }
 
