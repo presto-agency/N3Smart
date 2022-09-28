@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>N3Smart</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+</head>
+
+<body>
+<div class="wrapper">
+  @@include('_header.html')
+  <div class="root"></div>
+  <div class="page">
+    <section class="hero-contacts">
+      <div class="container">
+        <div class="hero-contacts__content">
+          <div class="hero-contacts__content_title">
+            <h2>
+              Kontakt oss
+            </h2>
+          </div>
+          <div class="hero-contacts__content_img">
+            <img src="img/contacts/hero.png" alt="picture">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="container">
+        <form action="#" class="form__content">
+          <h2>
+            Hallo, N3smart!
+          </h2>
+          <label class="input-container">
+            <p>
+              Mitt navn er
+            </p>
+            <input required placeholder="Ditt navn" type="text">
+          </label>
+          <label class="input-container">
+            <p>
+              Kontakt meg tilbake på
+            </p>
+            <input required placeholder="Din email" type="email">
+          </label>
+          <div class="input-wrapper">
+            <label class="input-container">
+              <p>
+                Eller ring meg
+              </p>
+              <input required placeholder="Your phone" type="tel">
+            </label>
+            <label class="input-container">
+              <p>
+                Jeg jobber med
+              </p>
+              <input required placeholder="Din bedrift" type="text">
+            </label>
+          </div>
+          <div class="input-container">
+            <textarea required placeholder="Din beskjed"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <button class="btn-cta _green">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+  @@include('_footer.html')
+</div>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>
