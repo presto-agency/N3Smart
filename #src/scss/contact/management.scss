@@ -1,0 +1,140 @@
+.management {
+  padding: 144px 0;
+  background-color: $color-grey-300;
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 0 88px 0;
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 17px;
+      box-sizing: content-box;
+      padding: 0 0 13px 0;
+
+      li {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: $color-dark;
+        padding: 0 24px 0 0;
+        border-right: 1px solid $color-grey-500;
+        margin: 0 24px 0 0;
+        transition: 300ms;
+
+        &.active {
+          color: $color-green;
+
+          a {
+            color: $color-green;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          &:hover {
+            color: $color-green;
+
+            a {
+              color: $color-green;
+            }
+          }
+        }
+
+        &:last-child {
+          margin: 0;
+          padding: 0;
+          border-right: 0;
+        }
+
+        a {
+          display: block;
+          color: $color-dark;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+
+  &__persons-list{
+    .persons-list{
+      &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px -16px;
+      }
+      &__link{
+        margin: 20px 16px;
+        width: calc((100% - (16px * 8))/4);
+        background-color: $color-white;
+        border-radius: 8px;
+
+        &_img{
+          width: 100%;
+          height: 246px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+        &_person{
+          padding: 29px 0;
+          margin: 0 40px;
+          border-bottom: 1px solid $color-grey-300;
+          p{
+            font-size: 16px;
+            line-height: 26px;
+            color: $color-grey-800;
+            margin: 6px 0 0 0;
+            &:first-child{
+              margin: 0;
+            }
+            strong{
+              font-size: 18px;
+              line-height: 29px;
+              font-weight: 700;
+              color: $color-green;
+            }
+          }
+        }
+        &_contacts{
+          display: flex;
+          flex-direction: column;
+          margin: 0 40px;
+          padding: 20px 0 39px 0;
+          a{
+            position: relative;
+            font-size: 16px;
+            line-height: 26px;
+            color: $color-dark;
+            padding: 0 0 0 25px;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 14px;
+              height: 14px;
+              background-image: url("../img/hero/phone.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+
+            &:last-child {
+              margin: 10px 0 0 0;
+              &:before {
+                background-image: url("../img/hero/mail.svg");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

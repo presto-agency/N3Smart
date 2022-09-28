@@ -1,18 +1,22 @@
-.hero-contacts{
+.hero-contacts {
   background-color: $color-grey-300;
-  &__content{
+
+  &__content {
     display: flex;
     justify-content: space-between;
     padding: 32px 0 42px;
-    &_title{
+
+    &_title {
       display: flex;
       align-items: center;
       margin: 0 50px 0 0;
     }
-    &_img{
+
+    &_img {
       height: 333px;
       padding: 0 110px 0 0;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -22,9 +26,9 @@
 }
 
 @media (max-width: 1199px) {
-  .hero-contacts{
-    &__content{
-      &_img{
+  .hero-contacts {
+    &__content {
+      &_img {
         padding: 0;
       }
     }
@@ -32,14 +36,16 @@
 }
 
 @media (max-width: 1023px) {
-  .hero-contacts{
-    &__content{
+  .hero-contacts {
+    &__content {
       flex-direction: column;
       padding: 47px 0 30px;
-      &_title{
+
+      &_title {
         margin: 0 0 50px 0;
       }
-      &_img{
+
+      &_img {
         height: 238px;
       }
     }
