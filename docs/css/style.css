@@ -224,6 +224,7 @@ h4 strong,
 }
 
 .input-file {
+  position: relative;
   cursor: pointer;
   background-color: #fff;
   border-radius: 8px;
@@ -273,6 +274,17 @@ h4 strong,
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+}
+
+.input-file span {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  left: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #878C8B;
+  text-align: center;
 }
 
 @font-face {
@@ -3172,12 +3184,20 @@ h4 strong,
             flex-direction: column;
   }
 
-  .form__content .input-wrapper .input-file + .btn-cta {
-    margin: 32px 0 0 0;
-  }
-
   .form__content .input-wrapper:last-of-type {
     margin: 0;
+  }
+
+  .form__content .input-wrapper .btn-cta {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .form__content .input-wrapper .input-file {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .form__content .input-wrapper > .input-container,
@@ -3192,7 +3212,7 @@ h4 strong,
   .form__content .input-wrapper > .input-container:first-child,
   .form__content .input-wrapper .btn-cta:first-child,
   .form__content .input-wrapper .input-file:first-child {
-    margin: 0 0 20px 0;
+    margin: 20px 0 0 0;
   }
 
   .form__content .input-wrapper > .input-container:last-child,

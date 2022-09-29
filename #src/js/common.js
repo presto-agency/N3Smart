@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
   addClassHeader()
   showSubmenu()
   changeBg()
+  checkInputFile()
 })
 
 const addClassHeader = () => {
@@ -72,5 +73,17 @@ const changeBg = () => {
       const section_src = section.getAttribute('data-src');
       section.style.backgroundImage = `url("${section_src}")`;
     })
+  }
+}
+
+const checkInputFile = () => {
+  let inputFile = document.querySelector('.input-file>input');
+  let innerText = document.querySelector('.input-file>span');
+  if ( !!inputFile){
+    inputFile.onchange = () => {
+      let filePath = inputFile.value.split('\\');
+      let nameFile = filePath[filePath.length - 1];
+      innerText.textContent = nameFile;
+    }
   }
 }
