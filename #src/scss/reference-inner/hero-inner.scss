@@ -1,36 +1,6 @@
 .hero-inner {
   margin: 33px 0 126px 0;
 
-  &__back {
-    a {
-      position: relative;
-      font-size: 12px;
-      line-height: 19px;
-      color: $color-dark;
-      padding: 0 0 0 32px;
-      transition: 300ms;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 12px;
-        height: 12px;
-        transform: translateY(-50%) rotate(-90deg);
-        fill: $color-dark;
-        transition: 300ms;
-      }
-
-      &:hover {
-        color: $color-green;
-
-        svg {
-          fill: $color-green;
-        }
-      }
-    }
-  }
-
   &__top-content {
     margin: 96px 0 0 0;
     display: flex;

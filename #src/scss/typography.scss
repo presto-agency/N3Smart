@@ -3,6 +3,13 @@ p{
   line-height: 29px;
   color: $color-dark;
 }
+ul, ol{
+  li{
+    color: $color-dark;
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
 
 h2, .h2{
   font-size: 64px;

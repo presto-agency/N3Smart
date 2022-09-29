@@ -26,7 +26,7 @@
   }
 }
 
-.btn-cta{
+.btn-cta {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
@@ -35,13 +35,104 @@
   border-radius: 8px;
   transition: 300ms;
   white-space: nowrap;
-  &._green{
+
+  &._green {
     color: $color-white;
     background-color: $color-green;
     @media (min-width: 1200px) {
-      &:hover{
+      &:hover {
         background-color: $color-dark;
       }
+    }
+  }
+
+  &._dark {
+    padding: 20px 35px;
+    color: $color-white;
+    background-color: $color-dark;
+    @media (min-width: 1200px) {
+      &:hover {
+        background-color: $color-green;
+      }
+    }
+  }
+}
+
+.back-arrow {
+  a {
+    position: relative;
+    font-size: 12px;
+    line-height: 19px;
+    color: $color-dark;
+    padding: 0 0 0 32px;
+    transition: 300ms;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      transform: translateY(-50%) rotate(-90deg);
+      fill: $color-dark;
+      transition: 300ms;
+    }
+
+    &:hover {
+      color: $color-green;
+
+      svg {
+        fill: $color-green;
+      }
+    }
+  }
+}
+
+.input-file {
+  cursor: pointer;
+  background-color: $color-white;
+  border-radius: 8px;
+  border: 1px dashed $color-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 72px;
+  transition: 300ms;
+  @media (min-width: 1200px ) {
+    &:hover{
+      background-color: $color-green;
+      border: 1px solid $color-green;
+      p{
+        color: $color-white;
+      }
+      svg{
+        fill: $color-white;
+      }
+    }
+  }
+  input {
+    display: none;
+  }
+
+  p {
+    position: relative;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $color-green;
+    padding: 0 0 0 32px;
+    transition: 300ms;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      fill: $color-green;
+      transition: 300ms;
     }
   }
 }
