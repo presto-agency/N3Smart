@@ -1,33 +1,42 @@
-.privacy{
+.privacy {
   margin: 97px 0 144px 0;
-  &__title{
+
+  &__title {
     max-width: 992px;
     margin: 0 0 106px 0;
-    p{
+
+    p {
       margin: 64px 0 0 0;
     }
   }
-  &__content{
+
+  &__content {
     max-width: 976px;
     margin: 0 0 0 auto;
-    h1, h2, h3, h4{
+
+    h1, h2, h3, h4 {
       font-weight: 700;
       color: $color-green;
       margin: 0 0 24px 0;
     }
-    p{
+
+    p {
       margin: 0 0 40px 0;
-      &:last-of-type{
+
+      &:last-of-type {
         margin: 0;
       }
     }
-    ul{
+
+    ul {
       margin: 24px 0 40px 0;
-      li{
+
+      li {
         position: relative;
         margin: 0 0 16px 0;
         padding: 0 0 0 15px;
-        &:before{
+
+        &:before {
           content: '';
           position: absolute;
           left: 5px;
@@ -39,23 +48,28 @@
         }
       }
     }
-    ol{
+
+    ol {
       counter-reset: index;
       list-style-type: none;
-      li{
+
+      li {
         counter-increment: item;
         margin: 24px 0 0 0;
         font-size: 18px;
         line-height: 29px;
         font-weight: 700;
         color: $color-green;
-        &:before{
+
+        &:before {
           counter-increment: index;
           content: counters(index, ".", decimal) ". ";
         }
-        ol{
+
+        ol {
           margin: 16px 0 0 0;
-          li{
+
+          li {
             margin: 0;
             font-size: 16px;
             line-height: 26px;
@@ -69,16 +83,15 @@
 }
 
 @media (max-width: 1023px) {
-  .privacy{
+  .privacy {
     margin: 47px 0 57px 0;
-    &__title{
+
+    &__title {
       margin: 0 0 54px 0;
-      p{
+
+      p {
         margin: 43px 0 0 0;
       }
-    }
-    &__content{
-
     }
   }
 }

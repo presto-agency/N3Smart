@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', function () {
   addClassHeader()
-  showSubmenu()
+  if (window.screen.width < 1200) {
+    showSubmenu(document.querySelectorAll('.submenu'))
+  }
   changeBg()
   checkInputFile()
 })
@@ -35,40 +37,37 @@ const addClassHeader = () => {
   }
 }
 
-const showSubmenu = () => {
-  if (window.screen.width < 1200) {
+const showSubmenu = (itemsLinks) => {
 
-    function setHeight() {
-      let itemsLinks = document.querySelectorAll('.submenu');
-      if (itemsLinks.length > 0) {
-        itemsLinks.forEach(item => {
-          item.onclick = () => {
-            let itemsMenu = item.querySelectorAll('ul>li');
-            let submenuHeight = getHeight(itemsMenu)
-            checkHeight(itemsMenu[0], submenuHeight)
-            itemsMenu[0].parentNode.parentNode.classList.toggle('active')
-          }
-        })
-      }
+  function setHeight(itemsLinks) {
+    if (itemsLinks.length > 0) {
+      itemsLinks.forEach(item => {
+        item.onclick = () => {
+          let itemsMenu = item.querySelectorAll('ul>li');
+          let submenuHeight = getHeight(itemsMenu)
+          checkHeight(itemsMenu[0], submenuHeight)
+          itemsMenu[0].parentNode.parentNode.classList.toggle('active')
+        }
+      })
     }
-
-    function getHeight(items) {
-      let subHeight = Array.from(items).reduce((sum, current) =>
-        sum + current.offsetHeight, 0);
-      return subHeight
-    }
-
-    function checkHeight(item, height) {
-      item.parentNode.style.maxHeight = item.parentNode.style.maxHeight === height + 'px' ? '0' : height + 'px';
-    }
-
-    setHeight()
   }
+
+  function getHeight(items) {
+    let subHeight = Array.from(items).reduce((sum, current) =>
+      sum + current.offsetHeight, 0);
+    return subHeight
+  }
+
+  function checkHeight(item, height) {
+    item.parentNode.style.maxHeight = item.parentNode.style.maxHeight === height + 'px' ? '0' : height + 'px';
+  }
+
+  setHeight(itemsLinks)
 }
 
 const changeBg = () => {
   const sections = document.querySelectorAll('.know-more');
-  if(!!sections.length > 0){
+  if (!!sections.length > 0) {
     sections.forEach(section => {
       const section_src = section.getAttribute('data-src');
       section.style.backgroundImage = `url("${section_src}")`;
@@ -79,7 +78,7 @@ const changeBg = () => {
 const checkInputFile = () => {
   let inputFile = document.querySelector('.input-file>input');
   let innerText = document.querySelector('.input-file>span');
-  if ( !!inputFile){
+  if (!!inputFile) {
     inputFile.onchange = () => {
       let filePath = inputFile.value.split('\\');
       let nameFile = filePath[filePath.length - 1];
