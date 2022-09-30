@@ -42,11 +42,15 @@ const showSubmenu = (itemsLinks) => {
   function setHeight(itemsLinks) {
     if (itemsLinks.length > 0) {
       itemsLinks.forEach(item => {
-        item.onclick = () => {
-          let itemsMenu = item.querySelectorAll('ul>li');
-          let submenuHeight = getHeight(itemsMenu)
-          checkHeight(itemsMenu[0], submenuHeight)
-          itemsMenu[0].parentNode.parentNode.classList.toggle('active')
+        // let itemLink = item.querySelector('a');
+        if(!!itemLink){
+          item.onclick = (e) => {
+            // e.preventDefault()
+            let itemsMenu = item.querySelectorAll('ul>li');
+            let submenuHeight = getHeight(itemsMenu)
+            checkHeight(itemsMenu[0], submenuHeight)
+            itemsMenu[0].parentNode.parentNode.classList.toggle('active')
+          }
         }
       })
     }
