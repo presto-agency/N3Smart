@@ -42,7 +42,8 @@ const showSubmenu = (itemsLinks) => {
   function setHeight(itemsLinks) {
     if (itemsLinks.length > 0) {
       itemsLinks.forEach(item => {
-        item.onclick = () => {
+        item.onclick = (e) => {
+          e.preventDefault()
           let itemsMenu = item.querySelectorAll('ul>li');
           let submenuHeight = getHeight(itemsMenu)
           checkHeight(itemsMenu[0], submenuHeight)
