@@ -42,8 +42,8 @@ const showSubmenu = (itemsLinks) => {
   function setHeight(itemsLinks) {
     if (itemsLinks.length > 0) {
       itemsLinks.forEach(item => {
-        let itemLink = item.querySelector('a')?item.querySelector('a'):item.querySelector('p');
-        if(!!itemLink){
+        let itemLink = item.querySelector('a') ? item.querySelector('a') : item.querySelector('p');
+        if (!!itemLink) {
           itemLink.onclick = (e) => {
             e.preventDefault()
             let itemsMenu = item.querySelectorAll('ul>li');

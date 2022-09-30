@@ -1,5 +1,6 @@
 .accordion {
   margin: 144px 0;
+
   &__list {
     max-width: 640px;
     margin: 144px auto 0;
@@ -67,11 +68,13 @@
 }
 
 @media (max-width: 1023px) {
-  .accordion{
+  .accordion {
     margin: 60px 0 56px 0;
-    &__list{
+
+    &__list {
       margin: 60px 0 0 0;
-      li{
+
+      li {
         padding: 0 0 21px 0;
       }
     }
