@@ -65,7 +65,7 @@
               transition: 300ms;
             }
 
-            &.sub-menu {
+            &.submenu {
               position: relative;
               &.active{
                 color: $color-green;
@@ -262,7 +262,7 @@
                 width: 20px;
                 height: 12px;
               }
-              &.sub-menu{
+              &.submenu{
                 ul{
                   max-height: 0;
                   overflow: hidden;
@@ -321,7 +321,7 @@
                 width: 10px;
                 height: 6px;
               }
-              &.sub-menu{
+              &.submenu{
                 ul{
                   li{
                     font-size: 12px;
