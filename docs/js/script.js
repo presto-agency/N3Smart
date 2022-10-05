@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
   addClassHeader()
   if (window.screen.width < 1200) {
-    showSubmenu(document.querySelectorAll('.submenu'))
+    showSubmenu(document.querySelectorAll('.sub-menu'))
   }
   changeBg()
   checkInputFile()
@@ -22,10 +22,10 @@ const addClassHeader = () => {
 
   function isActive() {
     header.classList.remove('active')
-    document.querySelectorAll('.submenu>ul').forEach(item => {
+    document.querySelectorAll('.sub-menu>ul').forEach(item => {
       item.style.maxHeight = '0';
     })
-    document.querySelectorAll('.submenu').forEach(item => {
+    document.querySelectorAll('.sub-menu').forEach(item => {
       item.classList.remove('active')
     })
   }
