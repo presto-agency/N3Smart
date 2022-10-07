@@ -7,6 +7,17 @@ window.addEventListener('DOMContentLoaded', function () {
   checkInputFile()
 })
 
+const setSvgIcon = () => {
+  const items = document.querySelectorAll('.submenu>a');
+  if(items.length > 0){
+    items.forEach(item => {
+      item.innerHTML += "<svg>\n" + "<use xlink:href=\"img/icons/icons.svg#arrow-v\"></use>\n" + "</svg>"
+    })
+  }
+}
+
+setSvgIcon()
+
 const addClassHeader = () => {
   const btn = document.querySelector('.header__content-cross');
   const header = document.querySelector('.header__content');

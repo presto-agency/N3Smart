@@ -254,11 +254,10 @@
                 margin: 0;
               }
               a{
-                display: inline-block;
+                position: relative;
+                display: block;
               }
               svg{
-                position: static;
-                display: inline-block;
                 width: 20px;
                 height: 12px;
               }

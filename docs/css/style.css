@@ -2895,12 +2895,11 @@ h4 strong,
   }
 
   .header__content-navigation .content-navigation__links li a {
-    display: inline-block;
+    position: relative;
+    display: block;
   }
 
   .header__content-navigation .content-navigation__links li svg {
-    position: static;
-    display: inline-block;
     width: 20px;
     height: 12px;
   }
