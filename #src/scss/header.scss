@@ -41,6 +41,7 @@
           padding: 0 0 0 93px;
 
           li {
+            cursor: pointer;
             font-size: 14px;
             line-height: 17px;
             color: $color-dark;
@@ -62,7 +63,6 @@
               width: 10px;
               height: 10px;
               fill: $color-dark;
-              transition: 300ms;
             }
 
             &.submenu {
@@ -84,7 +84,6 @@
 
                   svg {
                     fill: $color-green;
-                    transform: translateY(-50%) rotate(180deg);
                   }
                 }
               }
