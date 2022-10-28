@@ -1414,9 +1414,12 @@ h4 strong,
 }
 
 .why-choose__list ul li p small {
-  margin: 16px 0 0 0;
   font-size: 16px;
   line-height: 26px;
+}
+
+.why-choose__list ul li p strong + small {
+  margin: 16px 0 0 0;
 }
 
 .why-choose__map-city {
@@ -3828,9 +3831,12 @@ h4 strong,
   }
 
   .why-choose__list ul li p small {
-    margin: 9px 0 0 0;
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .why-choose__list ul li p strong + small {
+    margin: 9px 0 0 0;
   }
 
   .why-choose__map-city {
