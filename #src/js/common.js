@@ -7,16 +7,16 @@ window.addEventListener('DOMContentLoaded', function () {
   checkInputFile()
 })
 
-const setSvgIcon = () => {
-  const items = document.querySelectorAll('.submenu>a');
-  if(items.length > 0){
-    items.forEach(item => {
-      item.innerHTML += "<svg>\n" + "<use xlink:href=\"img/icons/icons.svg#arrow-v\"></use>\n" + "</svg>"
-    })
-  }
-}
+// const setSvgIcon = () => {
+//   const items = document.querySelectorAll('.submenu>a');
+//   if(items.length > 0){
+//     items.forEach(item => {
+//       item.innerHTML += "<svg>\n" + "<use xlink:href=\"img/icons/icons.svg#arrow-v\"></use>\n" + "</svg>"
+//     })
+//   }
+// }
 
-setSvgIcon()
+// setSvgIcon()
 
 const addClassHeader = () => {
   const btn = document.querySelector('.header__content-cross');
