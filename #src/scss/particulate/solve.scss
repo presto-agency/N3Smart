@@ -1,0 +1,129 @@
+.solve {
+  position: relative;
+  background: $color-green-l;
+  padding: 97px 0;
+
+  &__clean-car {
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    right: 100px;
+    width: 154px;
+    height: 174px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    &_list {
+      flex: 0 1 50%;
+
+      ul {
+        padding: 48px 137px 0 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          padding: 0 0 49px 0;
+          margin: 0 0 48px 0;
+          border-bottom: 1px solid $color-grey-600;
+
+          &:last-child {
+            margin: 0;
+            border-bottom: initial;
+          }
+
+          span {
+            flex: 0 0 80px;
+            height: 80px;
+
+            img {
+              border-radius: 16px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          p {
+            margin: 0 0 0 32px;
+          }
+        }
+      }
+    }
+
+    &_img {
+      position: relative;
+      flex: 0 1 50%;
+      height: 728px;
+
+      img {
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      span {
+        border-radius: 8px;
+        padding: 32px 30px;
+        position: absolute;
+        right: 38px;
+        bottom: 38px;
+        background: $color-grey;
+
+        img {
+          mix-blend-mode: multiply;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .solve {
+    &__content {
+      flex-direction: column;
+      align-items: initial;
+
+      &_list {
+        flex: initial;
+        ul{
+          padding: 48px 0 0 0;
+        }
+      }
+
+      &_img {
+        flex: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .solve{
+    &__clean-car {
+      top: -80px;
+      right: 24px;
+      width: 88px;
+      height: 116px;
+    }
+    &__content{
+      &_img{
+        height: 350px;
+        span{
+          padding: 15px;
+          right: 15px;
+          bottom: 15px;
+        }
+      }
+    }
+  }
+}
