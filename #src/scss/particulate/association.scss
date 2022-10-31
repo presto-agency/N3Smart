@@ -1,4 +1,18 @@
 .association {
+  &.variant {
+    background: $color-green-l;
+
+    .association {
+      &__content {
+        padding: 75px 0;
+
+        &_men {
+          display: none;
+        }
+      }
+    }
+  }
+
   &__content {
     position: relative;
     display: flex;
@@ -6,6 +20,12 @@
     padding: 144px 0 309px;
 
     p {
+      margin: 22px 0 0 0;
+
+      &:first-of-type {
+        margin: 0;
+      }
+
       strong {
         font-size: 40px;
         line-height: 64px;
@@ -25,6 +45,7 @@
       height: 108px;
 
       img {
+        mix-blend-mode: multiply;
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -42,6 +63,20 @@
 
     &_description {
       flex: 0 1 528px;
+
+      picture {
+        > img {
+          width: 100%;
+          object-fit: contain;
+          height: 100%;
+        }
+      }
+
+      > img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+      }
     }
 
     &_men {
@@ -61,19 +96,22 @@
   }
 }
 
-@media(max-width: 1199px){
-  .association{
-    &__content{
+@media(max-width: 1199px) {
+  .association {
+    &__content {
       padding: 80px 0 190px;
       flex-direction: column;
-      &_text{
+
+      &_text {
         flex: initial;
         margin: 0 0 40px 0;
       }
-      &_description{
+
+      &_description {
         flex: initial;
       }
-      &_men{
+
+      &_men {
         width: 132px;
         height: 226px;
         left: initial;
@@ -84,11 +122,11 @@
 }
 
 @media (max-width: 767px) {
-  .association{
-    &__content{
-      &_text{
-        p{
-          strong{
+  .association {
+    &__content {
+      &_text {
+        p {
+          strong {
             font-size: 24px;
             line-height: 30px;
           }
