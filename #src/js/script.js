@@ -1,8 +1,8 @@
-import {playVideo} from "./playVideo";
-import {addClassHeader} from "./addClassHeader";
-import {showSubmenu} from "./showSubmenu";
-import {changeBg} from "./changeBg";
-import {checkInputFile} from "./checkInputFile";
+import {playVideo} from "./modules/playVideo";
+import {addClassHeader} from "./modules/addClassHeader";
+import {showSubmenu} from "./modules/showSubmenu";
+import {changeBg} from "./modules/changeBg";
+import {checkInputFile} from "./modules/checkInputFile";
 
 window.addEventListener('DOMContentLoaded', function () {
   playVideo()
