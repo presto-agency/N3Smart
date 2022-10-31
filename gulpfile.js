@@ -44,7 +44,8 @@ let { src, dest } = require('gulp'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
     fonter = require('gulp-fonter'),
-    cheerio = require('gulp-cheerio');
+    cheerio = require('gulp-cheerio'),
+    webpack = require("webpack-stream");
 
 function browserSync(params) {
     browsersync.init({
@@ -93,16 +94,12 @@ function css() {
 
 function js() {
     return src(path.src.js)
-        .pipe(fileinclude())
-        .pipe(dest(path.build.js))
-        .pipe(
-            uglify()
-        )
-        .pipe(
-            rename({
-                extname: ".min.js"
-            })
-        )
+      .pipe(webpack({
+        mode: "production",
+        output: {
+              filename: "script.min.js"
+          }
+      }))
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }

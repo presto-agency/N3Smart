@@ -1,8 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
-  playVideo()
-})
-
-let playVideo = () => {
+export const playVideo = () => {
   let video_iframe = document.querySelector('.iframe-bg__content>iframe[data-src]');
   if(!!video_iframe){
     let reg = /\//g;
