@@ -95,7 +95,8 @@
 
       &_list {
         flex: initial;
-        ul{
+
+        ul {
           padding: 48px 0 0 0;
         }
       }
@@ -108,17 +109,19 @@
 }
 
 @media (max-width: 767px) {
-  .solve{
+  .solve {
     &__clean-car {
       top: -80px;
       right: 24px;
       width: 88px;
       height: 116px;
     }
-    &__content{
-      &_img{
+
+    &__content {
+      &_img {
         height: 350px;
-        span{
+
+        span {
           padding: 15px;
           right: 15px;
           bottom: 15px;
