@@ -1,7 +1,38 @@
 .solve {
   position: relative;
-  background: $color-green-l;
+  background: $color-grey-300;
   padding: 97px 0;
+
+  &.reverse {
+    background: initial;
+
+    .solve {
+      &__clean-car {
+        display: none;
+      }
+
+      &__content {
+        align-items: initial;
+
+        &_list {
+          order: 2;
+
+          ul {
+            padding: 0 0 0 60px;
+          }
+        }
+
+        &_img {
+          height: initial;
+          order: 1;
+
+          h3 {
+            @extend h1
+          }
+        }
+      }
+    }
+  }
 
   &__clean-car {
     position: absolute;
@@ -25,8 +56,12 @@
     &_list {
       flex: 0 1 50%;
 
+      h2 {
+        margin: 0 0 48px 0;
+      }
+
       ul {
-        padding: 48px 137px 0 0;
+        padding: 0 137px 0 0;
 
         li {
           display: flex;
@@ -89,6 +124,17 @@
 
 @media (max-width: 1023px) {
   .solve {
+    &.reverse{
+      .solve{
+        &__content{
+          &_list{
+            ul{
+              padding: 50px 0 0 0;
+            }
+          }
+        }
+      }
+    }
     &__content {
       flex-direction: column;
       align-items: initial;
@@ -97,7 +143,7 @@
         flex: initial;
 
         ul {
-          padding: 48px 0 0 0;
+          padding: 0;
         }
       }
 
