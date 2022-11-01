@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>N3Smart</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+</head>
+
+<body>
+<div class="wrapper">
+  @@include('_header.html')
+  <div class="root"></div>
+  <div class="page">
+    <section class="registration">
+      <div class="container">
+        <div class="registration__step-1 step-1">
+          <div class="step-1__top">
+            <span>
+              <img src="img/hero/cc.png" alt="picture">
+            </span>
+            <h3>
+              Hei, Sara fra N3 Smart her!
+            </h3>
+            <p>
+              For å gi deg en pris, trenger jeg å vite litt om behovet ditt.
+            </p>
+          </div>
+          <ul class="step-1__list">
+            <li class="active">
+              <a href="#">
+                <img src="img/registration/1.jpg" alt="picture">
+                <p>
+                  Flåtestyring
+                  av maskiner
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/registration/2.jpg" alt="picture">
+                <p>
+                  Svevestøv
+                  og Renhold
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/registration/3.jpg" alt="picture">
+                <p>
+                  Renholdssoner
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/registration/4.jpg" alt="picture">
+                <p>
+                  Inneklima
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="pail variant"></div>
+  </div>
+  @@include('_footer.html')
+</div>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

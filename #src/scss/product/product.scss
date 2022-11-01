@@ -153,6 +153,10 @@
   width: 100%;
   margin: 144px 0 150px;
 
+  &.variant{
+    margin: 0 0 150px;
+  }
+
   &:before {
     content: '';
     position: absolute;
