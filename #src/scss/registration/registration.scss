@@ -1,10 +1,10 @@
 .registration {
   background: $color-grey-300;
 
-  &__step-1 {
+  &__step {
     padding: 150px 0;
 
-    .step-1 {
+    .step {
       &__top {
         position: relative;
         padding: 0 185px 0 0;
@@ -41,6 +41,76 @@
         flex-wrap: wrap;
         margin: -4px;
 
+        &-form {
+          ul {
+            margin: -8px -16px 32px;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+              position: relative;
+              margin: 8px 16px;
+              width: calc((100% - (16px * 4)) / 2);
+
+              label {
+                border: 1px solid $color-white;
+                display: block;
+                font-size: 18px;
+                line-height: 29px;
+                padding: 16px 16px 16px 67px;
+                background: $color-white;
+                border-radius: 8px;
+
+                span {
+                  position: absolute;
+                  width: 20px;
+                  height: 20px;
+                  box-sizing: content-box;
+                  border-radius: 50%;
+                  border: 3px solid $color-green;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 24px;
+                  transition: 300ms;
+                }
+              }
+
+              input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                visibility: hidden;
+
+                &:checked {
+                  + label {
+                    border: 1px solid $color-green;
+
+                    span {
+                      background: $color-green;
+
+                      &:before {
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        background: $color-white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            width: 100%;
+          }
+        }
+
         li {
           position: relative;
           border-radius: 8px;
@@ -59,11 +129,13 @@
             }
           }
 
-          &:hover {
-            border: 4px solid $color-green;
+          @media (min-width: 1200px) {
+            &:hover {
+              border: 4px solid $color-green;
 
-            img {
-              opacity: 0.2;
+              img {
+                opacity: 0.2;
+              }
             }
           }
 
@@ -120,8 +192,8 @@
 
 @media (max-width: 1023px) {
   .registration {
-    &__step-1 {
-      .step-1 {
+    &__step {
+      .step {
         &__list {
           li {
             height: 250px;
@@ -135,22 +207,39 @@
 
 @media (max-width: 767px) {
   .registration {
-    &__step-1 {
-      .step-1 {
-        &__top{
+    &__step {
+      .step {
+        &__top {
           padding: 0;
-          span{
+          margin: 0 0 30px 0;
+
+          span {
             top: -50px;
             width: 90px;
             height: 100px;
           }
         }
+
         &__list {
           margin: 0;
+
+          &-form {
+            ul {
+              margin: 0 0 30px 0;
+
+              li {
+                width: 100%;
+                margin: 0 0 8px 0;
+
+              }
+            }
+          }
+
           li {
             width: 100%;
             margin: 0 0 8px 0;
-            &:last-child{
+
+            &:last-child {
               margin: 0;
             }
           }

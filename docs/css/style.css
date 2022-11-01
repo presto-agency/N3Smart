@@ -81,7 +81,7 @@ img {
 }
 
 h1,
-.registration__step-1 .step-1__top h3,
+.registration__step .step__top h3,
 .solve.reverse .solve__content_img h3,
 h2,
 h3,
@@ -114,7 +114,7 @@ h2,
 }
 
 h1,
-.registration__step-1 .step-1__top h3,
+.registration__step .step__top h3,
 .solve.reverse .solve__content_img h3,
 .h1 {
   font-size: 40px;
@@ -2509,8 +2509,8 @@ h4 strong,
 }
 
 .position-editor__content h1,
-.position-editor__content .registration__step-1 .step-1__top h3,
-.registration__step-1 .step-1__top .position-editor__content h3,
+.position-editor__content .registration__step .step__top h3,
+.registration__step .step__top .position-editor__content h3,
 .position-editor__content .solve.reverse .solve__content_img h3,
 .solve.reverse .solve__content_img .position-editor__content h3,
 .position-editor__content h2,
@@ -2570,8 +2570,8 @@ h4 strong,
 }
 
 .privacy__content h1,
-.privacy__content .registration__step-1 .step-1__top h3,
-.registration__step-1 .step-1__top .privacy__content h3,
+.privacy__content .registration__step .step__top h3,
+.registration__step .step__top .privacy__content h3,
 .privacy__content .solve.reverse .solve__content_img h3,
 .solve.reverse .solve__content_img .privacy__content h3,
 .privacy__content h2,
@@ -3079,17 +3079,17 @@ h4 strong,
   background: #EEF8F6;
 }
 
-.registration__step-1 {
+.registration__step {
   padding: 150px 0;
 }
 
-.registration__step-1 .step-1__top {
+.registration__step .step__top {
   position: relative;
   padding: 0 185px 0 0;
   margin: 0 0 72px 0;
 }
 
-.registration__step-1 .step-1__top span {
+.registration__step .step__top span {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -3100,23 +3100,23 @@ h4 strong,
   height: 174px;
 }
 
-.registration__step-1 .step-1__top span img {
+.registration__step .step__top span img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.registration__step-1 .step-1__top h3 {
+.registration__step .step__top h3 {
   margin: 0 0 12px 0;
 }
 
-.registration__step-1 .step-1__top p {
+.registration__step .step__top p {
   font-size: 18px;
   line-height: 29px;
 }
 
-.registration__step-1 .step-1__list {
+.registration__step .step__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3125,7 +3125,83 @@ h4 strong,
   margin: -4px;
 }
 
-.registration__step-1 .step-1__list li {
+.registration__step .step__list-form ul {
+  margin: -8px -16px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registration__step .step__list-form ul li {
+  position: relative;
+  margin: 8px 16px;
+  width: calc((100% - 64px) / 2);
+}
+
+.registration__step .step__list-form ul li label {
+  border: 1px solid #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 29px;
+  padding: 16px 16px 16px 67px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.registration__step .step__list-form ul li label span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+  border: 3px solid #2CA58D;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 24px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.registration__step .step__list-form ul li input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.registration__step .step__list-form ul li input:checked + label {
+  border: 1px solid #2CA58D;
+}
+
+.registration__step .step__list-form ul li input:checked + label span {
+  background: #2CA58D;
+}
+
+.registration__step .step__list-form ul li input:checked + label span:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.registration__step .step__list-form button {
+  width: 100%;
+}
+
+.registration__step .step__list li {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -3138,23 +3214,15 @@ h4 strong,
   transition: 500ms;
 }
 
-.registration__step-1 .step-1__list li.active {
+.registration__step .step__list li.active {
   border: 4px solid #2CA58D;
 }
 
-.registration__step-1 .step-1__list li.active img {
+.registration__step .step__list li.active img {
   opacity: 0.2;
 }
 
-.registration__step-1 .step-1__list li:hover {
-  border: 4px solid #2CA58D;
-}
-
-.registration__step-1 .step-1__list li:hover img {
-  opacity: 0.2;
-}
-
-.registration__step-1 .step-1__list li img {
+.registration__step .step__list li img {
   position: absolute;
   z-index: 3;
   opacity: 0.5;
@@ -3169,7 +3237,7 @@ h4 strong,
   transition: 500ms;
 }
 
-.registration__step-1 .step-1__list li p {
+.registration__step .step__list li p {
   position: absolute;
   z-index: 4;
   padding: 30px;
@@ -3181,7 +3249,7 @@ h4 strong,
   color: #fff;
 }
 
-.registration__step-1 .step-1__list li:before {
+.registration__step .step__list li:before {
   content: "";
   position: absolute;
   z-index: 2;
@@ -3193,7 +3261,7 @@ h4 strong,
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 47.63%);
 }
 
-.registration__step-1 .step-1__list li:after {
+.registration__step .step__list li:after {
   content: "";
   position: absolute;
   pointer-events: none;
@@ -3304,6 +3372,14 @@ h4 strong,
 
   .management__title ul li:hover a {
     color: #2CA58D;
+  }
+
+  .registration__step .step__list li:hover {
+    border: 4px solid #2CA58D;
+  }
+
+  .registration__step .step__list li:hover img {
+    opacity: 0.2;
   }
 }
 
@@ -4043,8 +4119,8 @@ h4 strong,
   }
 
   .position-editor__content h1,
-  .position-editor__content .registration__step-1 .step-1__top h3,
-  .registration__step-1 .step-1__top .position-editor__content h3,
+  .position-editor__content .registration__step .step__top h3,
+  .registration__step .step__top .position-editor__content h3,
   .position-editor__content .solve.reverse .solve__content_img h3,
   .solve.reverse .solve__content_img .position-editor__content h3,
   .position-editor__content h2,
@@ -4177,7 +4253,7 @@ h4 strong,
             flex: initial;
   }
 
-  .registration__step-1 .step-1__list li {
+  .registration__step .step__list li {
     height: 250px;
     width: calc((100% - 16px) / 2);
   }
@@ -4191,7 +4267,7 @@ h4 strong,
   }
 
   h1,
-  .registration__step-1 .step-1__top h3,
+  .registration__step .step__top h3,
   .solve.reverse .solve__content_img h3,
   .h1 {
     font-size: 32px;
@@ -4457,26 +4533,36 @@ h4 strong,
     line-height: 30px;
   }
 
-  .registration__step-1 .step-1__top {
+  .registration__step .step__top {
     padding: 0;
+    margin: 0 0 30px 0;
   }
 
-  .registration__step-1 .step-1__top span {
+  .registration__step .step__top span {
     top: -50px;
     width: 90px;
     height: 100px;
   }
 
-  .registration__step-1 .step-1__list {
+  .registration__step .step__list {
     margin: 0;
   }
 
-  .registration__step-1 .step-1__list li {
+  .registration__step .step__list-form ul {
+    margin: 0 0 30px 0;
+  }
+
+  .registration__step .step__list-form ul li {
     width: 100%;
     margin: 0 0 8px 0;
   }
 
-  .registration__step-1 .step-1__list li:last-child {
+  .registration__step .step__list li {
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .registration__step .step__list li:last-child {
     margin: 0;
   }
 }
