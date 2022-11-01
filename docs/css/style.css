@@ -3141,6 +3141,7 @@ h4 strong,
 }
 
 .registration__step .step__list-form ul li label {
+  cursor: pointer;
   border: 1px solid #fff;
   display: block;
   font-size: 18px;
