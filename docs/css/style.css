@@ -3322,10 +3322,6 @@ h4 strong,
           transform: translateY(-50%) translateX(-50%);
 }
 
-.registration__step .step__list-form ul li input:hover + label {
-  border: 1px solid #2CA58D;
-}
-
 .registration__step .step__list-form button {
   position: relative;
   z-index: 2;
@@ -3578,6 +3574,10 @@ h4 strong,
 
   .management__title ul li:hover a {
     color: #2CA58D;
+  }
+
+  .registration__step .step__list-form ul li input:hover + label {
+    border: 1px solid #2CA58D;
   }
 
   .registration__step .step__list li:hover {

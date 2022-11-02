@@ -185,9 +185,11 @@
                   }
                 }
 
-                &:hover {
-                  & + label {
-                    border: 1px solid $color-green;
+                @media (min-width: 1200px) {
+                  &:hover {
+                    & + label {
+                      border: 1px solid $color-green;
+                    }
                   }
                 }
               }
