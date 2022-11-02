@@ -3151,6 +3151,35 @@ h4 strong,
   opacity: 0.6;
 }
 
+.registration.email .registration__step .step__list-form > label input:focus {
+  border-bottom: 1px solid #878C8B;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid {
+  border-bottom: 1px solid #FF5C5C !important;
+  color: #FF5C5C !important;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid::-webkit-input-placeholder {
+  color: rgba(255, 92, 92, 0.3) !important;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid::-moz-placeholder {
+  color: rgba(255, 92, 92, 0.3) !important;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid:-ms-input-placeholder {
+  color: rgba(255, 92, 92, 0.3) !important;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid::-ms-input-placeholder {
+  color: rgba(255, 92, 92, 0.3) !important;
+}
+
+.registration.email .registration__step .step__list-form > label input:focus:invalid::placeholder {
+  color: rgba(255, 92, 92, 0.3) !important;
+}
+
 .registration.email .registration__step .step__list-form > span {
   z-index: 2;
   position: absolute;
@@ -3237,6 +3266,9 @@ h4 strong,
   padding: 16px 16px 16px 67px;
   background: #fff;
   border-radius: 8px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .registration__step .step__list-form ul li label span {
@@ -3284,6 +3316,10 @@ h4 strong,
   -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
+}
+
+.registration__step .step__list-form ul li input:hover + label {
+  border: 1px solid #2CA58D;
 }
 
 .registration__step .step__list-form button {

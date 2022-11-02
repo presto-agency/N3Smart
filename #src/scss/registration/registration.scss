@@ -5,6 +5,7 @@
     .registration {
       &__step {
         padding: 150px 0 0 0;
+
         .step {
           &__list-form {
             position: relative;
@@ -39,6 +40,22 @@
                   line-height: 26px;
                   color: $color-dark;
                   opacity: 0.6;
+                }
+
+                &:focus {
+                  border-bottom: 1px solid $color-grey-800;
+
+                  //error validate classes
+                  &:invalid {
+                    border-bottom: 1px solid $color-red-error !important;
+                    color: $color-red-error !important;
+
+                    &::placeholder {
+                      color: rgba($color-red-error, 0.3) !important;
+                    }
+                  }
+
+                  //finish error validate classes
                 }
               }
             }
@@ -124,7 +141,7 @@
                 padding: 16px 16px 16px 67px;
                 background: $color-white;
                 border-radius: 8px;
-
+                transition: 300ms;
                 span {
                   position: absolute;
                   width: 20px;
@@ -164,6 +181,11 @@
                         transform: translateY(-50%) translateX(-50%);
                       }
                     }
+                  }
+                }
+                &:hover{
+                  & + label {
+                    border: 1px solid $color-green;
                   }
                 }
               }
@@ -258,13 +280,14 @@
 
 @media (max-width: 1023px) {
   .registration {
-    &.email{
-      .registration{
-        &__step{
-          .step{
-            &__list-form{
+    &.email {
+      .registration {
+        &__step {
+          .step {
+            &__list-form {
               padding: 56px 0 183px;
-              >span{
+
+              > span {
                 display: none;
               }
             }
@@ -272,6 +295,7 @@
         }
       }
     }
+
     &__step {
       .step {
         &__list {
