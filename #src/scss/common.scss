@@ -8,7 +8,12 @@
   padding: 0px 24px;
   margin: 0px auto;
   box-sizing: content-box;
-  &._small{
+
+  &._medium {
+    max-width: 1087px;
+  }
+
+  &._small {
     max-width: 864px;
   }
 }
