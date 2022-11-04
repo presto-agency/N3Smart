@@ -3329,6 +3329,7 @@ h4 strong,
 }
 
 .registration__step .step__list li {
+  cursor: pointer;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
