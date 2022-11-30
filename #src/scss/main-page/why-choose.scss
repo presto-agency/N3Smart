@@ -131,16 +131,18 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        animation-name: show-pict;
-        animation-duration: 8s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        @keyframes show-pict {
-          20% {
-            opacity: 0;
-          }
-          70% {
-            opacity: 1;
+        @media (min-width: 1200px) {
+          animation-name: show-pict;
+          animation-duration: 8s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          @keyframes show-pict {
+            20% {
+              opacity: 0;
+            }
+            70% {
+              opacity: 1;
+            }
           }
         }
       }
@@ -164,6 +166,16 @@
     &__map-city {
       width: 750px;
       height: 422px;
+
+      picture {
+        &:nth-child(2) {
+          display: none;
+        }
+
+        img {
+          opacity: 1;
+        }
+      }
     }
   }
 }

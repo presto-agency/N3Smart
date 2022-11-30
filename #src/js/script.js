@@ -3,6 +3,7 @@ import {addClassHeader} from "./modules/addClassHeader";
 import {showSubmenu} from "./modules/showSubmenu";
 import {changeBg} from "./modules/changeBg";
 import {checkInputFile} from "./modules/checkInputFile";
+import {lottieMen, lottieRobot, lottieVC} from "./modules/lottie";
 
 window.addEventListener('DOMContentLoaded', function () {
   playVideo()
@@ -11,4 +12,7 @@ window.addEventListener('DOMContentLoaded', function () {
   showSubmenu(document.querySelectorAll('.submenu-faq'))
   changeBg()
   checkInputFile()
+  lottieRobot()
+  lottieVC()
+  lottieMen()
 })

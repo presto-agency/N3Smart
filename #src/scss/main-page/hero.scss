@@ -1,20 +1,25 @@
 .hero-block {
   background-color: $color-grey-300;
   padding: 152px 0 226px 0;
+
   &__content {
     display: flex;
     justify-content: space-between;
+
     &_text {
       flex: 0 1 479px;
-      h2{
+
+      h2 {
         margin: 10px 0 0 0;
       }
-      p{
+
+      p {
         font-size: 18px;
         line-height: 29px;
         margin: 24px 0 0 0;
       }
-      .btn-cta{
+
+      .btn-cta {
         margin: 36px 0 0 0;
       }
     }
@@ -23,11 +28,26 @@
       position: relative;
       flex: 0 1 48%;
 
-      .iframe-bg{
-        &__content{
+      .lottie {
+        display: block;
+        @media (max-width: 1199px) {
+          display: none;
+        }
+      }
+
+      .img {
+        display: block;
+        @media (min-width: 1200px) {
+          display: none;
+        }
+      }
+
+      .iframe-bg {
+        &__content {
           position: relative;
           padding: 56% 0 0 0;
-          &_substrate{
+
+          &_substrate {
             position: absolute;
             cursor: pointer;
             z-index: 2;
@@ -36,7 +56,8 @@
             width: 100%;
             height: 100%;
             transition: 300ms;
-            &:before{
+
+            &:before {
               content: '';
               position: absolute;
               z-index: 2;
@@ -49,7 +70,8 @@
               background-repeat: no-repeat;
               background-size: 56px 56px;
             }
-            &:after{
+
+            &:after {
               content: '';
               position: absolute;
               top: 0;
@@ -59,10 +81,12 @@
               background-color: rgba($color-dark, 0.3);
               border-radius: 16px;
             }
-            &.active{
+
+            &.active {
               opacity: 0;
             }
-            img{
+
+            img {
               position: absolute;
               border-radius: 16px;
               top: 0;
@@ -73,6 +97,7 @@
               box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.24);
             }
           }
+
           iframe {
             position: absolute;
             border-radius: 16px;
@@ -83,7 +108,8 @@
             pointer-events: none;
           }
         }
-        &__robot{
+
+        &__robot {
           position: absolute;
           z-index: 2;
           bottom: -54px;
@@ -91,7 +117,8 @@
           width: 179px;
           height: 248px;
         }
-        &__vc{
+
+        &__vc {
           position: absolute;
           z-index: 2;
           top: 27px;
@@ -105,22 +132,27 @@
 }
 
 @media (max-width: 1199px) {
-  .hero-block{
+  .hero-block {
     padding: 52px 0 127px 0;
-    &__content{
+
+    &__content {
       flex-direction: column;
-      &_text{
+
+      &_text {
         flex: initial;
       }
-      &_iframe{
+
+      &_iframe {
         flex: initial;
         margin: 60px 0 0 0;
-        .iframe-bg{
-          &__vc{
+
+        .iframe-bg {
+          &__vc {
             top: -53px;
             right: 1px;
           }
-          &__robot{
+
+          &__robot {
             width: 88px;
             height: 123px;
             bottom: -61px;
@@ -132,11 +164,11 @@
   }
 }
 
-@media(max-width: 767px){
-  .hero-block{
-    &__content{
-      &_text{
-        p{
+@media(max-width: 767px) {
+  .hero-block {
+    &__content {
+      &_text {
+        p {
           font-size: 14px;
           line-height: 22px;
           margin: 20px 0 0 0;

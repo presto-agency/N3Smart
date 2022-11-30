@@ -934,6 +934,14 @@ h4 strong,
           flex: 0 1 48%;
 }
 
+.hero-block__content_iframe .lottie {
+  display: block;
+}
+
+.hero-block__content_iframe .img {
+  display: block;
+}
+
 .hero-block__content_iframe .iframe-bg__content {
   position: relative;
   padding: 56% 0 0 0;
@@ -1448,34 +1456,6 @@ h4 strong,
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-animation-name: show-pict;
-          animation-name: show-pict;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes show-pict {
-  20% {
-    opacity: 0;
-  }
-
-  70% {
-    opacity: 1;
-  }
-}
-
-@keyframes show-pict {
-  20% {
-    opacity: 0;
-  }
-
-  70% {
-    opacity: 1;
-  }
 }
 
 .why-choose__map-city picture:nth-child(2) img {
@@ -1559,6 +1539,14 @@ h4 strong,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.solutions__content .lottie {
+  display: block;
+}
+
+.solutions__content .img {
+  display: block;
 }
 
 .solutions__content_title {
@@ -3572,6 +3560,10 @@ h4 strong,
     fill: #2CA58D;
   }
 
+  .hero-block__content_iframe .img {
+    display: none;
+  }
+
   .reference__title a:hover {
     color: #2CA58D;
   }
@@ -3582,6 +3574,41 @@ h4 strong,
 
   .reference__cards .cards__item_bottom a:hover {
     color: #2CA58D;
+  }
+
+  .why-choose__map-city picture img {
+    -webkit-animation-name: show-pict;
+            animation-name: show-pict;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+@-webkit-keyframes show-pict {
+    20% {
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 1;
+    }
+}
+
+@keyframes show-pict {
+    20% {
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 1;
+    }
+}
+
+  .solutions__content .img {
+    display: none;
   }
 
   .hero-inner__inner-buttons .inner-buttons__btn a:hover span {
@@ -3890,6 +3917,10 @@ h4 strong,
     margin: 36px 0 0 0;
   }
 
+  .hero-block__content_iframe .lottie {
+    display: none;
+  }
+
   .hero-block {
     padding: 52px 0 127px 0;
   }
@@ -3936,8 +3967,20 @@ h4 strong,
     height: 422px;
   }
 
+  .why-choose__map-city picture:nth-child(2) {
+    display: none;
+  }
+
+  .why-choose__map-city picture img {
+    opacity: 1;
+  }
+
   .know-more {
     background-attachment: initial;
+  }
+
+  .solutions__content .lottie {
+    display: none;
   }
 
   .hero-contacts__content_img {
