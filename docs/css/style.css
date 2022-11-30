@@ -1439,11 +1439,48 @@ h4 strong,
   height: 579px;
 }
 
-.why-choose__map-city img {
+.why-choose__map-city picture img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-animation-name: show-pict;
+          animation-name: show-pict;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes show-pict {
+  20% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-pict {
+  20% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+}
+
+.why-choose__map-city picture:nth-child(2) img {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .know-more {
