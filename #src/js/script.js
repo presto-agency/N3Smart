@@ -4,6 +4,7 @@ import {showSubmenu} from "./modules/showSubmenu";
 import {changeBg} from "./modules/changeBg";
 import {checkInputFile} from "./modules/checkInputFile";
 import {lottieMen, lottieRobot, lottieVC} from "./modules/lottie";
+import {inputNumber} from "./modules/inputNumber";
 
 window.addEventListener('DOMContentLoaded', function () {
   playVideo()
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', function () {
   lottieRobot()
   lottieVC()
   lottieMen()
+  inputNumber()
 })
