@@ -10,6 +10,20 @@
     width: 154px;
     height: 174px;
 
+    &.lottie {
+      display: block;
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+
+    &.img {
+      display: block;
+      @media (min-width: 1200px) {
+        display: none;
+      }
+    }
+
     img {
       width: 100%;
       height: 100%;

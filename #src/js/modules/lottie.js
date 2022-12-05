@@ -29,3 +29,13 @@ export const lottieMen = () => {
     path: 'plugins/json/animation-2.json'
   })
 }
+
+export const lottieVCB = () => {
+  lottie.loadAnimation({
+    container: document.getElementById('vcb'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'plugins/json/animation-4.json'
+  })
+}

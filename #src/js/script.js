@@ -3,7 +3,7 @@ import {addClassHeader} from "./modules/addClassHeader";
 import {showSubmenu} from "./modules/showSubmenu";
 import {changeBg} from "./modules/changeBg";
 import {checkInputFile} from "./modules/checkInputFile";
-import {lottieMen, lottieRobot, lottieVC} from "./modules/lottie";
+import {lottieMen, lottieRobot, lottieVC, lottieVCB} from "./modules/lottie";
 import {inputNumber} from "./modules/inputNumber";
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -17,4 +17,5 @@ window.addEventListener('DOMContentLoaded', function () {
   lottieVC()
   lottieMen()
   inputNumber()
+  lottieVCB()
 })
