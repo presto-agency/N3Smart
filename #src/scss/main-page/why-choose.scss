@@ -2,6 +2,17 @@
   position: relative;
   background-color: $color-grey-300;
   padding: 82px 0 170px 0;
+  &.management-style{
+    .why-choose{
+      &__list{
+        ul{
+          li{
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
 
   &__clean-car {
     position: absolute;

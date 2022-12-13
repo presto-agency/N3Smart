@@ -1317,6 +1317,12 @@ h4 strong,
   padding: 82px 0 170px 0;
 }
 
+.why-choose.management-style .why-choose__list ul li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .why-choose__clean-car {
   position: absolute;
   top: -50px;
@@ -3245,6 +3251,18 @@ h4 strong,
   margin: 0 0 72px 0;
 }
 
+.registration__step .step__top.circle span {
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.registration__step .step__top.circle span img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .registration__step .step__top span {
   position: absolute;
   top: 50%;
@@ -4849,6 +4867,12 @@ h4 strong,
   .registration__step .step__top {
     padding: 0;
     margin: 0 0 30px 0;
+  }
+
+  .registration__step .step__top.circle span {
+    top: -70px;
+    width: 120px;
+    height: 120px;
   }
 
   .registration__step .step__top span {
