@@ -2416,6 +2416,7 @@ h4 strong,
 }
 
 .management__title ul li {
+  cursor: pointer;
   font-size: 14px;
   line-height: 17px;
   font-weight: 500;
@@ -2429,10 +2430,6 @@ h4 strong,
 }
 
 .management__title ul li.active {
-  color: #2CA58D;
-}
-
-.management__title ul li.active a {
   color: #2CA58D;
 }
 
@@ -2460,10 +2457,15 @@ h4 strong,
 }
 
 .management__persons-list .persons-list__link {
+  display: none;
   margin: 20px 16px;
   width: calc((100% - 128px) / 4);
   background-color: #fff;
   border-radius: 8px;
+}
+
+.management__persons-list .persons-list__link.active {
+  display: block;
 }
 
 .management__persons-list .persons-list__link_img {
@@ -3666,10 +3668,6 @@ h4 strong,
   }
 
   .management__title ul li:hover {
-    color: #2CA58D;
-  }
-
-  .management__title ul li:hover a {
     color: #2CA58D;
   }
 

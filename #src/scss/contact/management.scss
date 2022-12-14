@@ -24,6 +24,7 @@
       scrollbar-width: none;
 
       li {
+        cursor: pointer;
         font-size: 14px;
         line-height: 17px;
         font-weight: 500;
@@ -33,21 +34,15 @@
         margin: 0 24px 0 0;
         transition: 300ms;
 
+
         &.active {
           color: $color-green;
-
-          a {
-            color: $color-green;
-          }
         }
+
 
         @media (min-width: 1200px) {
           &:hover {
             color: $color-green;
-
-            a {
-              color: $color-green;
-            }
           }
         }
 
@@ -75,10 +70,15 @@
       }
 
       &__link {
+        display: none;
         margin: 20px 16px;
         width: calc((100% - (16px * 8)) / 4);
         background-color: $color-white;
         border-radius: 8px;
+
+        &.active {
+          display: block;
+        }
 
         &_img {
           width: 100%;
