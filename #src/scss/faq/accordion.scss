@@ -60,6 +60,10 @@
             line-height: 26px;
             color: $color-dark;
             font-weight: 400;
+            margin: 0 0 20px 0;
+            &:last-child{
+              margin: 0;
+            }
           }
         }
       }

@@ -2759,6 +2759,11 @@ h4 strong,
   line-height: 26px;
   color: #0A2342;
   font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.accordion__list li ul li p:last-child {
+  margin: 0;
 }
 
 .bottom-call {
