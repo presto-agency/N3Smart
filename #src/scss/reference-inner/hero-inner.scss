@@ -51,9 +51,14 @@
           }
 
           p {
+            background-color: rgba($color-white, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
             position: absolute;
             bottom: 40px;
-            left: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
             display: flex;
             flex-direction: column;
 
@@ -67,7 +72,7 @@
             span {
               font-size: 14px;
               line-height: 17px;
-              color: $color-grey-800;
+              color: $color-dark;
             }
           }
         }
@@ -104,9 +109,7 @@
   &__bottom-content {
     display: flex;
     max-width: 864px;
-    margin: 64px auto;
-    padding: 0 0 127px 0;
-    border-bottom: 1px solid $color-grey-600;
+    margin: 0 auto 127px;
 
     .bottom-content {
       &__img {
@@ -137,7 +140,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 864px;
-    margin: 0 auto;
+    padding: 64px 0 0 0;
+    margin: 127px auto 0;
+    border-top: 1px solid $color-grey-600;
+
 
     .inner-buttons {
       &__btn {
@@ -284,8 +290,7 @@
 
     &__bottom-content {
       flex-direction: column;
-      padding: 0 0 51px 0;
-      margin: 0 0 38px 0;
+      margin: 0 0 51px 0;
 
       .bottom-content {
         &__img {
@@ -304,6 +309,8 @@
     }
 
     &__inner-buttons {
+      margin: 51px 0 0 0;
+      padding: 38px 0 0 0;
       flex-direction: column;
 
       .inner-buttons {

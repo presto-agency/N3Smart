@@ -1719,9 +1719,16 @@ h4 strong,
 }
 
 .hero-inner__top-content .top-content__img_picture p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
   position: absolute;
   bottom: 40px;
-  left: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1741,7 +1748,7 @@ h4 strong,
 .hero-inner__top-content .top-content__img_picture p span {
   font-size: 14px;
   line-height: 17px;
-  color: #878C8B;
+  color: #0A2342;
 }
 
 .hero-inner__editor {
@@ -1780,9 +1787,7 @@ h4 strong,
   display: -ms-flexbox;
   display: flex;
   max-width: 864px;
-  margin: 64px auto;
-  padding: 0 0 127px 0;
-  border-bottom: 1px solid #DEE9E6;
+  margin: 0 auto 127px;
 }
 
 .hero-inner__bottom-content .bottom-content__img img {
@@ -1818,7 +1823,9 @@ h4 strong,
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 864px;
-  margin: 0 auto;
+  padding: 64px 0 0 0;
+  margin: 127px auto 0;
+  border-top: 1px solid #DEE9E6;
 }
 
 .hero-inner__inner-buttons .inner-buttons__btn.reverse a span {
@@ -4774,8 +4781,7 @@ h4 strong,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 0 51px 0;
-    margin: 0 0 38px 0;
+    margin: 0 0 51px 0;
   }
 
   .hero-inner__bottom-content .bottom-content__img:first-child {
@@ -4794,6 +4800,8 @@ h4 strong,
   }
 
   .hero-inner__inner-buttons {
+    margin: 51px 0 0 0;
+    padding: 38px 0 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
