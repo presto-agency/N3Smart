@@ -1355,7 +1355,7 @@ h4 strong,
 
 .why-choose__list {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   margin: 57px 0 0 0;
   max-width: 930px;
 }
@@ -2823,6 +2823,20 @@ h4 strong,
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.challange.home .challange {
+  position: relative;
+}
+
+.challange.home .challange__content_img {
+  height: 601px;
+}
+
+.challange.home .challange__content .btn-cta {
+  margin: 24px 0 0 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .challange__content {

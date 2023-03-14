@@ -16,6 +16,23 @@
     }
   }
 
+  &.home {
+    .challange {
+      position: relative;
+
+      &__content {
+        &_img {
+          height: 601px;
+        }
+
+        .btn-cta {
+          margin: 24px 0 0 0;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
   &__content {
     display: flex;
 
