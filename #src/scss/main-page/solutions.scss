@@ -6,20 +6,6 @@
     display: flex;
     justify-content: space-between;
 
-    .lottie {
-      display: block;
-      @media (max-width: 1199px) {
-        display: none;
-      }
-    }
-
-    .img {
-      display: block;
-      @media (min-width: 1200px) {
-        display: none;
-      }
-    }
-
     &_title {
       flex: 0 1 231px;
       margin: 0 50px 0 0;
@@ -66,21 +52,6 @@
             }
           }
         }
-      }
-    }
-
-    &_men {
-      position: absolute;
-      z-index: 2;
-      bottom: -168px;
-      left: 247px;
-      width: 229px;
-      height: 301px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
       }
     }
 
@@ -141,13 +112,6 @@
         left: 0;
       }
 
-      &_men {
-        width: 132px;
-        height: 226px;
-        bottom: -253px;
-        left: initial;
-        right: 0;
-      }
     }
   }
 }
