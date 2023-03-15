@@ -1630,10 +1630,6 @@ h4 strong,
      object-fit: contain;
 }
 
-.animation-men {
-  height: 260px;
-}
-
 .animation-men__content {
   position: relative;
 }
@@ -1649,7 +1645,7 @@ h4 strong,
 .animation-men__content_men {
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: -245px;
   left: 247px;
   width: 229px;
   height: 301px;
@@ -4279,16 +4275,12 @@ h4 strong,
     left: 0;
   }
 
-  .animation-men {
-    margin: 0 0 -30px 0;
-    height: 226px;
-  }
-
   .animation-men__content_men {
     width: 132px;
     height: 226px;
     left: initial;
     right: 0;
+    top: -200px;
   }
 
   .hero-inner {

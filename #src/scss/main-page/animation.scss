@@ -1,9 +1,4 @@
 .animation-men {
-  height: 260px;
-  @media (max-width: 1023px) {
-    margin: 0 0 -30px 0;
-    height: 226px;
-  }
 
   &__content {
     position: relative;
@@ -25,7 +20,7 @@
     &_men {
       position: absolute;
       z-index: 2;
-      top: 0;
+      top: -245px;
       left: 247px;
       width: 229px;
       height: 301px;
@@ -34,6 +29,7 @@
         height: 226px;
         left: initial;
         right: 0;
+        top: -200px;
       }
 
       img {
