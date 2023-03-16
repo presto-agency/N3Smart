@@ -2892,7 +2892,8 @@ h4 strong,
   height: 423px;
 }
 
-.challange__content_img span img {
+.challange__content_img span img,
+.challange__content_img span iframe {
   border-radius: 10px;
   width: 100%;
   height: 100%;
