@@ -31,6 +31,22 @@
         }
       }
     }
+
+    .iframe-bg {
+      height: initial;
+      @media (max-width: 1023px) {
+        height: initial;
+        &__content {
+          top: initial;
+          transform: initial;
+        }
+      }
+
+      &__content {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__content {
