@@ -1029,7 +1029,7 @@ h4 strong,
 }
 
 .hero-block__content_iframe .img {
-  display: block;
+  display: none;
 }
 
 .partners {
