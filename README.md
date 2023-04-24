@@ -45,4 +45,17 @@ yarn start
 
 deploy to gh-pages automatically after push to branch
 
-deploy: [gh-pages](https://presto-agency.github.io/N3Smart/)
+deploy:
+[main](https://presto-agency.github.io/N3Smart/),
+[cleaning-zones](https://presto-agency.github.io/N3Smart/cleaning-zones.html),
+[contacts](https://presto-agency.github.io/N3Smart/contacts.html),
+[faq](https://presto-agency.github.io/N3Smart/faq.html),
+[indoor](https://presto-agency.github.io/N3Smart/indoor.html),
+[management](https://presto-agency.github.io/N3Smart/management.html),
+[particulate](https://presto-agency.github.io/N3Smart/particulate.html),
+[position](https://presto-agency.github.io/N3Smart/position.html),
+[privacy](https://presto-agency.github.io/N3Smart/privacy.html),
+[product](https://presto-agency.github.io/N3Smart/product.html),
+[reference](https://presto-agency.github.io/N3Smart/reference.html),
+[reference-inner](https://presto-agency.github.io/N3Smart/reference-inner.html),
+[registration](https://presto-agency.github.io/N3Smart/registration.html)
