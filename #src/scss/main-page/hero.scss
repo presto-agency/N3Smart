@@ -45,6 +45,19 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .hero-block {
+    &__content {
+      &_iframe {
+        .iframe-bg {
+          &__vc {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1199px) {
   .hero-block {
     padding: 52px 0 127px 0;
@@ -63,7 +76,7 @@
         .iframe-bg {
           &__vc {
             top: -53px;
-            right: 1px;
+            right: -30px;
           }
 
           &__robot {

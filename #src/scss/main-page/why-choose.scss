@@ -1,7 +1,7 @@
 .why-choose {
   position: relative;
   background-color: $color-grey-300;
-  padding: 82px 0 170px 0;
+  padding: 82px 0 230px 0;
   &.management-style{
     .why-choose{
       &__list{
@@ -144,8 +144,8 @@
     z-index: 2;
     bottom: -60px;
     right: -222px;
-    width: 1030px;
-    height: 579px;
+    width: 930px;
+    height: 559px;
 
     picture {
       img {
@@ -181,16 +181,23 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .why-choose__map-city{
+    width: 830px;
+    height: 415px;
+  }
+}
 @media (max-width: 1199px) {
   .why-choose {
+    padding: 82px 0 300px 0;
     &__clean-car {
       width: 88px;
       height: 116px;
     }
 
     &__map-city {
-      width: 750px;
-      height: 422px;
+      width: 650px;
+      height: 385px;
 
       picture {
         &:nth-child(2) {
